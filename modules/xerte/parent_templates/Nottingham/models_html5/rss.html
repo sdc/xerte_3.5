@@ -1,0 +1,150 @@
+<script type="text/javascript">
+/**
+ * Licensed to The Apereo Foundation under one or more contributor license
+ * agreements. See the NOTICE file distributed with this work for
+ * additional information regarding copyright ownership.
+
+ * The Apereo Foundation licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at:
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+	// Built using the feed library at https://rss2json.com/google-feed-api-alternative
+ 
+	var rss = new function() {
+		var $pageContents,
+			$textHolder,
+			$panel,
+			$resultsHolder,
+			rssURL;
+
+		// function called every time the size of the LO is changed
+		this.sizeChanged = function() {
+			if (x_browserInfo.mobile == false) {
+				var $panel = $("#pageContents .panel");
+				$panel.height($x_pageHolder.height() - parseInt($x_pageDiv.css("padding-top")) * 2 - parseInt($panel.css("padding-top")) * 2 - 5);
+			}
+		};
+		
+		this.init = function() {
+			$script('https://rss2json.com/gfapi.js', function () {
+				rss.begin();
+			});
+		};
+		
+		this.begin = function() {
+			$pageContents = $("#pageContents");
+			$textHolder = $("#textHolder");
+			$panel = $("#pageContents .panel");
+			$resultsHolder = $pageContents.find("#resultsHolder");
+			$("#loadingSpinner p").html(x_getLangInfo(x_languageData.find("fetchResults")[0], "label", "Fetching results..."));
+
+			$("#loadingSpinner").show();
+
+			google.load("feeds", "1");
+			
+			rssURL = x_currentPageXML.getAttribute("url");
+
+			function initialize() {
+				var feed = new google.feeds.Feed(rssURL);
+				feed.load(function(result) {
+					$("#loadingSpinner").hide();
+					if (!result.error) {
+						rss.listFeed(result.feed);
+					}
+					else {
+						rss.errorLoading(x_getLangInfo(x_languageData.find("loadError")[0], "label", "Error loading") + " \"" + rssURL +"\"");
+					}
+				});
+			}
+			google.setOnLoadCallback(initialize);
+			
+			var panelWidth = x_currentPageXML.getAttribute("panelWidth");
+			if (panelWidth == "Full") {
+				$("#pageContents .right div:first").appendTo($("#pageContents"));
+				$("#pageContents .splitScreen").remove();
+			} else {
+				var align = x_currentPageXML.getAttribute("align") == "Right" ? "Right" : "Left";
+				if (align == "Right") {
+					var $splitScreen = $("#pageContents .splitScreen");
+					
+					$textHolder
+						.removeClass("left")
+						.addClass("right")
+						.appendTo($splitScreen);
+					
+					$("#rssHolder")
+						.removeClass("right")
+						.addClass("left");
+				}
+				
+				$("#textHolder").html(x_addLineBreaks(x_currentPageXML.getAttribute("text")));
+				if (panelWidth == "Small") {
+					align == "Right" ? $("#pageContents .splitScreen").addClass("medium") : $("#pageContents .splitScreen").addClass("large");
+				} else if (panelWidth == "Large") {
+					align == "Right" ? $("#pageContents .splitScreen").addClass("xlarge") : $("#pageContents .splitScreen").addClass("small");
+				} else {
+					align == "Right" ? $("#pageContents .splitScreen").addClass("large") : $("#pageContents .splitScreen").addClass("medium");
+				}
+			}
+
+			this.sizeChanged();
+			x_pageLoaded();
+		};
+		
+		this.listFeed = function(feed) {
+				var resultsString = "";
+
+				if (feed.entries == 0) {
+					resultsString = '<div><p>' + x_getLangInfo(x_languageData.find("noResults")[0], "label", "No results returned") + '</p></div>'
+				}
+				else {
+					$pageContents.find("#headerHolder").html("<h3>" + feed.description + "</h3>");
+
+					$.each(feed.entries, function (index, item) {
+						resultsString += '<div><a target="_blank" href="' + item.link + '">' + item.title + '</a><p>' + item.contentSnippet + '</p></div>';
+					});
+				}
+				$resultsHolder
+					.html(resultsString)
+					.find("div:even").addClass("shadedDiv");
+		};
+
+		this.errorLoading = function(msg) {
+			$resultsHolder
+				.html('<div><p>' + msg + '</p></div>');
+		};
+
+	};
+
+	rss.init();
+
+</script>
+
+
+<div id="pageContents">
+	
+	<div class="splitScreen">
+		
+		<div id="textHolder" class="left" tabindex="1"></div>
+		
+		<div id="rssHolder" class="right">
+			<div class="panel">
+				<div id="loadingSpinner"><div class="spinner"></div><p></p></div>
+				<div id="headerHolder"></div>
+				<div id="resultsHolder"></div>
+			</div>
+		</div>
+		
+	</div>
+
+</div>

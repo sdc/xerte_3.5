@@ -1,0 +1,132 @@
+<script type="text/javascript">
+/**
+ * Licensed to The Apereo Foundation under one or more contributor license
+ * agreements. See the NOTICE file distributed with this work for
+ * additional information regarding copyright ownership.
+
+ * The Apereo Foundation licenses this file to you under the Apache License,
+ * Version 2.0 (the "License"); you may not use this file except in
+ * compliance with the License. You may obtain a copy of the License at:
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+	
+	// pageChanged & sizeChanged functions are needed in every model file
+	// other functions for model should also be in here to avoid conflicts
+	var QRcode = new function() {
+		
+		// function called every time the page is viewed after it has initially loaded
+		this.pageChanged = function() {
+			QRcode.loadAudio();
+		}
+		
+		this.init = function() {
+			// Load in the required scripts before we can begin
+			$script.path(x_templateLocation + 'common_html5/js/qrcode/');
+			$script(['qrcode.min.js'], function () {
+				QRcode.begin();
+			});
+		}
+		
+		this.isgdJSON = function (response) {
+			if (response.shorturl && response.shorturl != '') {  console.log(response.shorturl);
+				link = "<a target='_blank' href=" + response.shorturl + ">" + response.shorturl + "</a>";
+				$("#shorturltodisplay").html(link);
+			}
+		}
+		
+		this.begin = function () {
+			var pastedurl	= encodeURIComponent(x_currentPageXML.getAttribute("url")),
+				//shorturl = "rss_proxy.php?rss=" + encodeURIComponent("https://is.gd/api.php?longurl=" + pastedurl);
+				shorturl = "https://is.gd/create.php?format=json&callback=QRcode.isgdJSON&url=" + pastedurl;
+			
+			$.ajax({
+				url: shorturl,
+				cache: false
+			});
+			
+			if (x_currentPageXML.getAttribute("align") == "Hide text") {
+				$("#textHolder").remove();
+				$("#imgHolder").addClass("centerAlign");
+			} else {
+				$("#textHolder").html(x_addLineBreaks(x_currentPageXML.childNodes[0].nodeValue));
+				if (x_currentPageXML.getAttribute("align") == "Right") {
+					$("#pageContents .panel").addClass("x_floatLeft");
+				} else {
+					$("#pageContents .panel").addClass("x_floatRight");
+				}
+			}
+
+			// Work out the correct sizes
+			var size = {
+				width : 400, // desktop / tablet
+				height : 400
+			};
+			if (x_browserInfo.mobile == true) {
+				size = {
+					width : 250,
+					height : 250
+				}
+			}
+			if (x_currentPageXML.getAttribute("sound") != undefined && x_currentPageXML.getAttribute("sound") != "") {
+				size.height -= x_audioBarH;
+			}
+			
+			// Create the QRcode
+			var qrcode = new QRCode(document.getElementById("qrcode"), size);
+			qrcode.makeCode(x_currentPageXML.getAttribute("url"));
+			QRcode.loadAudio(true);
+
+			$('#qrcode img')
+				.attr({
+					"alt":	x_currentPageXML.getAttribute("tip")
+				});
+			$('#qrcode')
+				.attr({
+					"title":	x_currentPageXML.getAttribute("tip")
+				});
+
+		}
+		
+		this.loadAudio = function(firstLoad) {
+			var soundFile = x_currentPageXML.getAttribute("sound");
+			if (soundFile != undefined && soundFile != "") {
+				$("#pageAudio").mediaPlayer({
+					type		:"audio",
+					source		:soundFile,
+					width		:$("#pageImg").width()
+				});
+			}
+			if (firstLoad == true) {
+				x_pageLoaded();
+			}
+		}
+	}
+	
+	QRcode.init();
+	
+</script>
+
+
+<div id="pageContents">
+
+	<div id="imgHolder" class="mobileAlign">
+		<div class="panel inline">
+            <div id="shorturltodisplay"></div>
+			<div id="qrcode"></div>
+			<div id="pageAudio"></div>
+		</div>
+	</div>
+	
+	<div id="textHolder">
+		
+	</div>
+	
+</div>

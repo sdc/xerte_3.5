@@ -1,0 +1,4311 @@
+2013-07-21 19:16  jjs@gcu.ac.uk
+
+	* [r1057] FIX: Need to check for the existence of
+	  x_currentPageXML.getAttribute("imgSize") before using indexOf on
+	  it
+
+2013-07-18 14:44  nikodemmiranowicz@gmail.com
+
+	* [r1055] option for introducing an image to quiz main textHolder
+	  (the same way that a video can be added)
+
+2013-07-18 10:17  jjs@gcu.ac.uk
+
+	* [r1053] FIX: MCQ - Only show feedback from options selected,
+	  rather than all.
+
+2013-07-18 09:07  nikodemmiranowicz@gmail.com
+
+	* [r1051] tweak for swf player and flv having full screen button
+	  active in thumbnails
+
+2013-07-15 10:16  juliantenney79@gmail.com
+
+	* [r1049] John's fix for SHIFT-Preview (thanks)
+
+2013-07-14 12:13  jjs@gcu.ac.uk
+
+	* [r1048] Change to page linking to allow
+	  asfunction:_level0.engine.rootIcon.pageLink,2 as well as the more
+	  acceptable
+	  asfunction:_level0.engine.rootIcon.pageLink,PG1373800497357
+	  
+	  Reason: backward compatibility with LOs already out there in the
+	  wild...
+
+2013-07-12 21:13  jjs@gcu.ac.uk
+
+	* [r1045] readme.txt file added to
+	  \modules\xerte\templates\Nottingham\media at Tom's request to
+	  attempt to fix some of the media upload issues.
+
+2013-07-12 13:54  jjs@gcu.ac.uk
+
+	* [r1043] FIX last thumbnail that wasn't resized...
+
+2013-07-11 23:38  jjs@gcu.ac.uk
+
+	* [r1042] FIX: MCQ model was only checking if checked boxes were
+	  correct, and ignoring unchecked ones. Thus ticking a single
+	  "correct" box in multiple mode gave a correct message...
+
+2013-07-11 14:33  nikodemmiranowicz@gmail.com
+
+	* [r1039] two tweaks for thumbnails in multiple perspectives (auto
+	  played thumbnails and badly refreshed mp4 thumbnails on returning
+	  from full screen)
+
+2013-07-09 14:14  juliantenney79@gmail.com
+
+	* [r1037] That's it for all HTML5 models
+
+2013-07-09 14:08  juliantenney79@gmail.com
+
+	* [r1035] more...
+
+2013-07-09 13:51  juliantenney79@gmail.com
+
+	* [r1033] Most of the HTML5 screenshots
+
+2013-07-09 10:18  nikodemmiranowicz@gmail.com
+
+	* [r1031] JS conditional traps for 'undefined'
+
+2013-07-09 08:00  jjs@gcu.ac.uk
+
+	* [r1029] R1018 change pushed into v2 branch
+
+2013-07-08 20:56  jjs@gcu.ac.uk
+
+	* [r1028] Fix to allow IE9 and IE10 to correctly use HTML5 when
+	  required. Also have changed rloObject.htm significantly, adding
+	  lots of IE conditionals and moving scripts to end to more follow
+	  standards.
+	  
+	  IE conditionals block adds lots of classes to <html> based on IE
+	  version to allow further tweaking...
+	  
+	  PLEASE TEST!!
+
+2013-07-08 13:24  jjs@gcu.ac.uk
+
+	* [r1027] We missed the check for window.opener != null out of
+	  branch v2
+
+2013-07-05 14:08  jjs@gcu.ac.uk
+
+	* [r1024] Change to message produced in IE8 when it can't render
+	  the textDrawing page
+	  correctly...
+
+2013-07-03 13:51  jjs@gcu.ac.uk
+
+	* [r1020] Fix for YouTube's dropping of the protocol from embed
+	  codes (http)
+
+2013-07-02 06:56  ajjreijnders@gmail.com
+
+	* [r1017] Enable MathJax in feedback of quiz answers
+
+2013-06-30 11:05  jjs@gcu.ac.uk
+
+	* [r1014] Fix for NULL number_of_uses in v2.0 branch
+
+2013-06-29 18:52  jjs@gcu.ac.uk
+
+	* [r1010] Fix for 'number of uses' not displaying or being
+	  incremented...
+
+2013-06-27 15:58  jjs@gcu.ac.uk
+
+	* [r1007] Push Safari Flash Cookie Bug fix into v2.0 branch
+
+2013-06-26 09:21  juliantenney79@gmail.com
+
+	* [r1005] Fixed mathjax rendering in quiz when restarted
+
+2013-06-26 08:33  juliantenney79@gmail.com
+
+	* [r1002] Fixed the mathjax problem when typesetting not done on
+	  revisiting a page
+
+2013-06-21 14:12  cross.fay@gmail.com
+
+	* [r995] HTML5 - tidied up code for bleedingImage page
+
+2013-06-20 14:06  cross.fay@gmail.com
+
+	* [r993] HTML5 - Changed the way custom HTML files uploaded to
+	  navigators etc. works so that more than one can be added per page
+
+2013-06-20 08:17  cross.fay@gmail.com
+
+	* [r991] HTML5 - template & examples for creating new page models
+
+2013-06-20 08:12  cross.fay@gmail.com
+
+	* [r989] Background colour css added to embedDiv.html iframe so
+	  background images don't show through it
+
+2013-06-19 14:54  ajjreijnders@gmail.com
+
+	* [r987] Fix typo in the create db command
+
+2013-06-14 10:09  cross.fay@gmail.com
+
+	* [r984] HTML5 - change so if there's only 1 page in the LO the
+	  navigation buttons don't show
+
+2013-06-14 09:40  cross.fay@gmail.com
+
+	* [r981]
+
+2013-06-14 09:13  cross.fay@gmail.com
+
+	* [r980] HTML5 - Changes to modelAnswer & modelAnswerResults pages
+	  to give copy / paste instructions (not possible to automate this
+	  in same way as in Flash version). Includes changes to xwd to add
+	  extra language strings and change to xenith.js to add new global
+	  function x_selectText.
+
+2013-06-12 10:38  cross.fay@gmail.com
+
+	* [r978] Changes to gapFill.html:
+	  - In fill in blank the hint can now be turned off using optional
+	  property
+	  - In drag and drop if there is more than one label with the same
+	  word on it they match correctly to any matching target
+
+2013-06-06 09:29  juliantenney79@gmail.com
+
+	* [r974] links in navigators
+
+2013-06-06 09:09  juliantenney79@gmail.com
+
+	* [r971] Allows links to be added to panes
+
+2013-06-02 09:45  ajjreijnders@gmail.com
+
+	* [r968] Enable LaTeX and MathJax in option (quiz answers)
+
+2013-05-30 09:29  ajjreijnders@gmail.com
+
+	* [r959] Fix double peer.php (a file was required twice)
+
+2013-05-30 09:28  ajjreijnders@gmail.com
+
+	* [r958] Only use stripslashes if magig_quotes_gpc is enabled!
+	  -- This fixes the inadvertent removel of '\' characters in LaTeX.
+
+2013-05-29 14:49  cross.fay@gmail.com
+
+	* [r955] HTML5 - added windowWidth & align optional properties to
+	  embedDiv page
+
+2013-05-29 14:11  cross.fay@gmail.com
+
+	* [r953] HTML5 - changed style of close button used in dialog
+	  windows so it's more obvious. mediaViewer.swf in new window can
+	  now be opened via link in text and not just from button on footer
+
+2013-05-29 12:58  cross.fay@gmail.com
+
+	* [r951] HTML5 - videoSynch & transciptReader models updated so
+	  they now accept uploaded timed transcript files to create
+	  captions & so captions on screen can be clicked to skip to synch
+	  point
+
+2013-05-24 14:53  cross.fay@gmail.com
+
+	* [r949] Added timedText optional property to transcriptReader &
+	  videoSynch pages in xwd so timed text files created with media
+	  viewer chunker can be used to set synch points
+
+2013-05-24 12:43  cross.fay@gmail.com
+
+	* [r947] Updated MediaViewer.swf so you can now click on captions
+	  to jump to that part of audio/video
+
+2013-05-23 13:54  cross.fay@gmail.com
+
+	* [r945] Changed MediaViewer.swf so it now accepts info about the
+	  appearance of captions from xwd as well as the timed transcript
+	  file.
+	  Added 6 new optional attributes to xwd to control media caption
+	  timing/positioning/appearance etc.
+
+2013-05-23 10:34  juliantenney79@gmail.com
+
+	* [r943] added a 'link' that can be added to a section and
+	  controlled via the window.open options.
+
+2013-05-23 09:56  cross.fay@gmail.com
+
+	* [r941] HTML5 - Changes to a number of page types so custom html
+	  can be uploaded instead of swfs
+
+2013-05-23 09:29  jjs@gcu.ac.uk
+
+	* [r939] Fix missing space between language string and size.
+
+2013-05-23 09:25  juliantenney79@gmail.com
+
+	* [r937] John's changes for linking
+
+2013-05-22 15:42  jjs@gcu.ac.uk
+
+	* [r935] Fix for space missing in RSS feed before "was developed
+	  by"
+
+2013-05-22 09:25  juliantenney79@gmail.com
+
+	* [r933] Added a new type to the wizard, html, to make a better job
+	  of editing html nodes; added a new HTML type node to the wizard
+	  for the bootstrap tempalte's HTML nodes.
+
+2013-05-21 13:26  juliantenney79@gmail.com
+
+	* [r931] Adds a markup item to distinquish bettwen text and HTML
+	  code in the site template, and a canvas icon, which will show on
+	  'Show Advanced'
+
+2013-05-21 13:24  juliantenney79@gmail.com
+
+	* [r929] Allows for advanced newNodes as well as advanced options
+
+2013-05-20 12:30  juliantenney79@gmail.com
+
+	* [r927]
+
+2013-05-20 10:50  ajjreijnders@gmail.com
+
+	* [r926] non-full MathJax configuration seems to be incomapatible
+	  with how we feed text to MathJax
+
+2013-05-20 08:58  juliantenney79@gmail.com
+
+	* [r924] changed the mathjax config
+
+2013-05-17 18:22  ajjreijnders@gmail.com
+
+	* [r922] Math support broken on Windows 8 with latest firefox
+
+2013-05-17 12:43  juliantenney79@gmail.com
+
+	* [r919]
+
+2013-05-17 11:56  juliantenney79@gmail.com
+
+	* [r918]
+
+2013-05-17 10:05  juliantenney79@gmail.com
+
+	* [r916]
+
+2013-05-16 17:32  jjs@gcu.ac.uk
+
+	* [r914] Fix table creation statement to allow adding users in DB
+	  auth mode
+
+2013-05-16 15:05  ajjreijnders@gmail.com
+
+	* [r912] Create user table by calling check() in
+	  management/users.php
+
+2013-05-16 14:51  ajjreijnders@gmail.com
+
+	* [r910] Fix duplicate template (extra_flags was not copied)
+
+2013-05-15 14:07  juliantenney79@gmail.com
+
+	* [r907] left over from testing the flipping no-browse issue
+
+2013-05-15 14:04  juliantenney79@gmail.com
+
+	* [r905]
+
+2013-05-15 13:31  cross.fay@gmail.com
+
+	* [r904] Bug fix in flickr page - There's now a fall back if imgTxt
+	  is undefined (for old projects where this isn't in xwd)
+
+2013-05-15 13:11  cross.fay@gmail.com
+
+	* [r902] Bug fix to quiz.rlm - main feedback now only shows at the
+	  end of the quiz
+
+2013-05-15 11:52  cross.fay@gmail.com
+
+	* [r900] HTML5 CHANGES / BUG FIXES:
+	  - Added ARIA landmark roles (banner / main / navigation) to
+	  interface
+	  
+	  xenith.js:
+	  - bug fix where narration bar width wasn't always updating on
+	  change of LO size,
+	  - bug fix where if page was skipped quickly past it wouldn't
+	  always show
+	  correctly when returned to,
+	  - changed order things are done in when page changed to fix some
+	  css problems
+	  (e.g. not calculating available size correctly if narration bar
+	  is visible)
+	  - tidied up code,
+	  - removed unneccessary x_sortInitObject function
+	  
+	  textSWF/xerteModel.htm:
+	  - removed call to unneccessary x_sortInitObject function
+	  
+	  connectorHotspotImage.htm:
+	  - bug fix where audio continued to play when dialog closed
+	  
+	  flickr.htm:
+	  - bug fix where panel jumped to left after image loaded in Chrome
+	  
+	  - MCQ page, if there's no correct answer in options then the 'You
+	  answer is
+	  correct/incorrect' text won't show
+	  
+	  - Quiz page, the main feedback text now only shows when quiz is
+	  complete
+	  
+	  Other page models:
+	  - changed calls to sizeChanged() from init() to fit in with
+	  changes made in
+	  xenith.js
+	  - changed the way image load events are used as they sometimes
+	  missed cached
+	  images being reloaded
+
+2013-05-14 12:19  juliantenney79@gmail.com
+
+	* [r899] Fixed bug when loading style sheet blanks first page in
+	  toolkits template project.
+
+2013-05-14 09:30  juliantenney79@gmail.com
+
+	* [r897] Fixed thing with editor window growing after Tom's fix for
+	  the browse dialog (this one runs and runs)
+
+2013-05-13 16:54  ajjreijnders@gmail.com
+
+	* [r895] Fix for browsing in the wizard not working FF after
+	  preview
+
+2013-05-13 14:40  juliantenney79@gmail.com
+
+	* [r894] Fix for bootstrap tempalte browse dialog thing in firefox
+
+2013-05-10 12:27  ajjreijnders@gmail.com
+
+	* [r887] Should point to xerte module files
+
+2013-05-09 22:00  ajjreijnders@gmail.com
+
+	* [r884] MySQL syntax error in newer MySQL server when creating the
+	  user table
+
+2013-05-09 09:43  juliantenney79@gmail.com
+
+	* [r882] Get MathJax to update after ajax calls. Unsure if this is
+	  a problem where mathjax is used in the toolkit template?
+
+2013-05-04 16:25  ajjreijnders@gmail.com
+
+	* [r880] Fix buttons in list_specific_templates
+
+2013-05-04 12:44  ajjreijnders@gmail.com
+
+	* [r878] Fixed errors in library/Xerte/Authentication/Db.php
+
+2013-05-04 11:02  ajjreijnders@gmail.com
+
+	* [r876] Allow more then 255 characters in tutorial block
+
+2013-05-03 17:45  ajjreijnders@gmail.com
+
+	* [r874] Make install more robust by NOT modifying
+	  setup/database.txt but using session variables. It is more robust
+	  against partly succeeded and restarted setup attempts.
+
+2013-05-03 11:56  ajjreijnders@gmail.com
+
+	* [r872] - Make the fact that 'upload_tmp_dir' is not set a warning
+	  in stead of an error during setup
+
+2013-05-03 08:57  cross.fay@gmail.com
+
+	* [r870] Bug fix: buttonSequence now works correctly when full size
+
+2013-05-02 14:08  ajjreijnders@gmail.com
+
+	* [r868] - Enable logo's from site_details instead of fixed names
+
+2013-05-02 13:59  ajjreijnders@gmail.com
+
+	* [r866] - Typo in list of user specific templates
+
+2013-05-02 13:20  ajjreijnders@gmail.com
+
+	* [r864] - Enable logo's from site_details instead of fixed names
+
+2013-05-02 11:49  ajjreijnders@gmail.com
+
+	* [r862] - Enable logo's from site_details instead of fixed names
+
+2013-05-02 11:47  ajjreijnders@gmail.com
+
+	* [r860] - Enable tutorial text again on frontpage.
+
+2013-05-02 09:45  juliantenney79@gmail.com
+
+	* [r858] changed dates to order the template Xerte Online Toolkit,
+	  then Bootstrap, then RSS.
+
+2013-05-01 09:27  cross.fay@gmail.com
+
+	* [r856] Removed call to windowResized() from
+	  player_html5/rloObject.htm as function doesn't exist
+
+2013-04-30 14:50  juliantenney79@gmail.com
+
+	* [r854] added mathjax support to the bootstrap template, using
+	  Tom's method
+
+2013-04-30 11:09  ajjreijnders@gmail.com
+
+	* [r852] - Fix for languages
+	  - Fix for typo in error reporting in setup
+
+2013-04-27 11:30  ajjreijnders@gmail.com
+
+	* [r846] - Updated installation manual, this still needs some work
+
+2013-04-25 20:20  ajjreijnders@gmail.com
+
+	* [r845] - Fix for HTML5 only export
+
+2013-04-25 12:49  juliantenney79@gmail.com
+
+	* [r843]
+
+2013-04-25 12:33  ajjreijnders@gmail.com
+
+	* [r842] - Make 'Launch Video' translatable
+
+2013-04-25 12:31  cross.fay@gmail.com
+
+	* [r841] HTML5 - improved flickr page model
+
+2013-04-25 11:30  juliantenney79@gmail.com
+
+	* [r840] Fixed issue in FF with media browser not showing
+
+2013-04-25 10:51  ajjreijnders@gmail.com
+
+	* [r839] - suppress error message of 1.2 scorm
+
+2013-04-25 10:33  cross.fay@gmail.com
+
+	* [r838]
+
+2013-04-25 09:32  cross.fay@gmail.com
+
+	* [r837] HTML5 - Changed memory page so you can now have images on
+	  all cards
+
+2013-04-25 09:30  juliantenney79@gmail.com
+
+	* [r836] Deferred loading of the facebook API
+
+2013-04-25 09:18  ajjreijnders@gmail.com
+
+	* [r835] - fixed publishproperties for site templates
+
+2013-04-25 09:17  juliantenney79@gmail.com
+
+	* [r834] defer added to addthis script
+
+2013-04-25 09:11  juliantenney79@gmail.com
+
+	* [r833] so the preview from workspace opens with scrollbars
+
+2013-04-25 08:34  juliantenney79@gmail.com
+
+	* [r832] Added this html5shiv to the application rather than
+	  loading from google code
+
+2013-04-24 16:19  cross.fay@gmail.com
+
+	* [r831] HTML5 - fixed bug with adding new css file in xenith.js
+
+2013-04-24 13:52  cross.fay@gmail.com
+
+	* [r830] HTML5:
+	  - new stylesheet with styles you can use to easily change look of
+	  LOs
+	  - added link to mediaViewer.html if media/transcript added to LO
+	  - fixed accessibility bug in mcq page
+	  - changed what happens in customHotspots page if canvas tag not
+	  supported
+	  - fixed iframe size bug in wiki page
+
+2013-04-24 13:12  juliantenney79@gmail.com
+
+	* [r829] Making sure the wizard files are the same in both modules
+	  (they are) but there is specific code in the wizard for
+	  previewing the site template (left over from before the recent
+	  modularisation update)
+
+2013-04-24 13:00  juliantenney79@gmail.com
+
+	* [r828] Makes the preview functionality consistent between the
+	  site template and the toolkits template: new windows always, and
+	  scrollbars for the site template.
+
+2013-04-24 12:51  juliantenney79@gmail.com
+
+	* [r827] makes the preview from the wizard for site open in a new
+	  window, and scrollbars work
+
+2013-04-24 09:42  juliantenney79@gmail.com
+
+	* [r826] Turned off RSS export
+
+2013-04-24 09:40  juliantenney79@gmail.com
+
+	* [r825] Ackowledging you wonderful people in the credits / setup
+	  stuff!
+
+2013-04-24 09:35  juliantenney79@gmail.com
+
+	* [r824] Web toolkits changed to online toolkits
+
+2013-04-24 09:34  juliantenney79@gmail.com
+
+	* [r823]
+
+2013-04-23 20:11  cross.fay@gmail.com
+
+	* [r822] HTML5 - tidied up code in several page models and css
+	  files
+
+2013-04-22 21:39  cross.fay@gmail.com
+
+	* [r821] HTML5 - changed xwds to add movieSize optional property to
+	  several pages
+
+2013-04-22 21:38  cross.fay@gmail.com
+
+	* [r820] HTML5 - tidied up code in several pages and added
+	  movieSize attribute
+
+2013-04-22 20:49  ajjreijnders@gmail.com
+
+	* [r819] - Choose engine in publishproperties.php
+	  - Remove javascript/html5 from the links in properties
+
+2013-04-22 15:26  ajjreijnders@gmail.com
+
+	* [r818] - Fix for media_and_quota: complete link, and download
+	  button functioning again.
+
+2013-04-22 14:42  ajjreijnders@gmail.com
+
+	* [r817] - Simplified full install (a bit)
+
+2013-04-22 14:41  ajjreijnders@gmail.com
+
+	* [r816] - Adding support for MathJax, see http://www.mathjax.org
+
+2013-04-21 21:19  patrick.lockley@googlemail.com
+
+	* [r815] Sorted the install a little
+
+2013-04-21 19:26  ronm123@googlemail.com
+
+	* [r814] Guide to upgrading an existing installation. Decided to
+	  describe two options: Easy option and Clean upgrade. Probably
+	  needs someone to review.
+
+2013-04-20 08:05  ajjreijnders@gmail.com
+
+	* [r813] - Test
+
+2013-04-19 22:38  ajjreijnders@gmail.com
+
+	* [r812] -Typos?
+
+2013-04-19 22:37  ajjreijnders@gmail.com
+
+	* [r811] - Several bugfixes for the cases where the SCORM player is
+	  in a popup window. onunload is not called in that case but
+	  onbeforeunload is.
+	  - Wrong manifest in case of rich scorm 1.2 manifest with more
+	  than 2 authors.
+	  - Enables mcq for tracking
+	  - changed button handling for quiz in flash and html5
+	  - Added scorm tracking option to main LO (no tracking, minimal
+	  tracking and full tracking)
+	  - Added optional weight parameter to enabled interactivities
+
+2013-04-19 21:45  ajjreijnders@gmail.com
+
+	* [r810] - Fixed INDEX_BUTTON_CREATE_PROJECT
+
+2013-04-19 14:59  cross.fay@gmail.com
+
+	* [r809] HTML5 - fixed hotspot highlight appearance bug in IE on
+	  several page types
+
+2013-04-19 13:52  juliantenney79@gmail.com
+
+	* [r808]
+
+2013-04-19 12:10  cross.fay@gmail.com
+
+	* [r807] HTML5 - Change to annotatedDiagram (incl xwd) to allow
+	  swfs to be used instead of image
+
+2013-04-19 09:57  cross.fay@gmail.com
+
+	* [r806] HTML5 - moved the code that looks for alternative file for
+	  videos to mediaPlayer.js so it's not duplicated in page models
+
+2013-04-19 08:01  ajjreijnders@gmail.com
+
+	* [r805] - Wrong title (again)
+
+2013-04-18 17:28  patrick.lockley@googlemail.com
+
+	* [r804]
+
+2013-04-18 17:24  patrick.lockley@googlemail.com
+
+	* [r803]
+
+2013-04-18 17:24  patrick.lockley@googlemail.com
+
+	* [r802]
+
+2013-04-18 17:21  patrick.lockley@googlemail.com
+
+	* [r801]
+
+2013-04-18 17:21  patrick.lockley@googlemail.com
+
+	* [r800] Added JS
+
+2013-04-18 16:57  ajjreijnders@gmail.com
+
+	* [r799] - Missing files in the site template
+
+2013-04-18 15:21  juliantenney79@gmail.com
+
+	* [r798]
+
+2013-04-18 15:19  juliantenney79@gmail.com
+
+	* [r797] turning the bootstrap template on
+
+2013-04-18 15:12  cross.fay@gmail.com
+
+	* [r796] connectorHotspotImage - max window width/height increased
+	  in xwds
+
+2013-04-18 15:06  juliantenney79@gmail.com
+
+	* [r795] Fixed up the sidebar to work when tabs on the page and
+	  checking it in before the weird errors start cropping up again.
+
+2013-04-18 14:39  cross.fay@gmail.com
+
+	* [r794] HTML5 - added support for optional images to videoSynch
+	  page
+
+2013-04-18 13:40  cross.fay@gmail.com
+
+	* [r793]
+
+2013-04-18 13:22  juliantenney79@gmail.com
+
+	* [r792]
+
+2013-04-18 10:51  ajjreijnders@gmail.com
+
+	* [r791] -Hmm when closing a popup the onunload is NOT called,
+	  whereas onbeforeunload is. This chaneg is needed for LMS's that
+	  use popup windows for the Scorm player.
+
+2013-04-18 10:12  cross.fay@gmail.com
+
+	* [r790] HTML5 - change to gapFill so upper/lower case is ignored
+	  when checking answers
+
+2013-04-18 09:55  cross.fay@gmail.com
+
+	* [r789] HTML5 - new gapFill page type & minor change to styles for
+	  tooltips in mainStyles.css and xenith.js
+
+2013-04-18 09:34  ajjreijnders@gmail.com
+
+	* [r788] - Fix for HTML5 export (xtrracking_noop.js was referred to
+	  in wrong folder)
+
+2013-04-18 08:07  ajjreijnders@gmail.com
+
+	* [r787] - Revert some of the changes of revision 785
+
+2013-04-17 16:03  juliantenney79@gmail.com
+
+	* [r786] fixed a bug when multiple accordions on the same page.
+
+2013-04-17 15:41  juliantenney79@gmail.com
+
+	* [r785] Header styles sorted, Copyright statement and license info
+	  removed from the footer.
+
+2013-04-17 11:02  juliantenney79@gmail.com
+
+	* [r784] You can now configure the header colour and header text
+	  colour. Enter two header colours, comma separated, for a
+	  gradient. I might change this to use colorPickers,
+
+2013-04-16 22:56  patrick.lockley@googlemail.com
+
+	* [r783] Added site language files
+
+2013-04-16 22:55  patrick.lockley@googlemail.com
+
+	* [r782] Fixed workspace bugs
+
+2013-04-16 22:55  patrick.lockley@googlemail.com
+
+	* [r781] fixed bug with disply query
+
+2013-04-16 22:54  patrick.lockley@googlemail.com
+
+	* [r780] Fixed button bug for delete button
+
+2013-04-16 22:54  patrick.lockley@googlemail.com
+
+	* [r779] Finished Site module
+
+2013-04-16 21:57  cross.fay@gmail.com
+
+	* [r778] HTML5 - Change to chart page so graph size isn't fixed any
+	  more
+
+2013-04-16 19:57  jjs@gcu.ac.uk
+
+	* [r777] UPLOAD.PHP patch to try and solve the flash cookie
+	  issue...
+
+2013-04-16 19:33  ajjreijnders@gmail.com
+
+	* [r776] - Oops, type in basic.sql in commit 758
+
+2013-04-16 14:54  juliantenney79@gmail.com
+
+	* [r775] The template that is not called site now does pills, tabs,
+	  accordions and carousel navigators. Few things to iron out.
+
+2013-04-15 23:51  patrick.lockley@googlemail.com
+
+	* [r774] Fixed CSS and JS bug
+
+2013-04-15 23:50  patrick.lockley@googlemail.com
+
+	* [r773] moved a line or two around
+
+2013-04-15 23:46  patrick.lockley@googlemail.com
+
+	* [r772] Removed files no longer in use
+
+2013-04-15 23:44  patrick.lockley@googlemail.com
+
+	* [r771] Removed example url code (now uses play instead)
+
+2013-04-15 23:41  patrick.lockley@googlemail.com
+
+	* [r770] Neatened up
+
+2013-04-15 23:37  patrick.lockley@googlemail.com
+
+	* [r769] Added call to display links
+
+2013-04-15 23:34  patrick.lockley@googlemail.com
+
+	* [r768] Added display link options to both module functions files
+
+2013-04-15 23:29  patrick.lockley@googlemail.com
+
+	* [r767] Added header redirect to the setup path if index ran
+	  before setup is complete
+
+2013-04-15 16:01  juliantenney79@gmail.com
+
+	* [r766] started on the navigators
+
+2013-04-15 14:44  ajjreijnders@gmail.com
+
+	* [r765] - Fix $template_path_string: should point to
+	  modules/site/parent_templates
+
+2013-04-15 14:00  ajjreijnders@gmail.com
+
+	* [r764] - Somehow missed to include
+	  modules/site/module_functions.php
+
+2013-04-15 09:05  ajjreijnders@gmail.com
+
+	* [r763] - Changed framework for the 'site' template
+
+2013-04-15 08:30  ajjreijnders@gmail.com
+
+	* [r762] - Oops, extraflags should be extraparams
+
+2013-04-14 11:17  ajjreijnders@gmail.com
+
+	* [r761] - Oops deleted css attributes of body
+
+2013-04-13 16:50  ajjreijnders@gmail.com
+
+	* [r760] - Another small issue with site
+
+2013-04-13 12:23  ajjreijnders@gmail.com
+
+	* [r759] Small bug fix for site/preview.php
+
+2013-04-12 21:28  ajjreijnders@gmail.com
+
+	* [r758] - Changed play.php (root) and modules/xerte/play.php and
+	  preview
+	  - Make play_html5.php (root) and preview_html5.php (root)
+	  redirect to new play
+	  - Make use of the same template files as export does for the play
+	  and preview
+	  - Get rid of difference between rloObject.js used for play and
+	  used for export
+	  - Only one location for MainPreloader.swf and xmlEngine.swf (for
+	  play and export, export used to copy it from a different
+	  location)
+	  - Modified wizard to call preview.php with 'engine=other' when
+	  Ctr+Play is clicked
+	  - Make peer.php use the same templates as play and preview and
+	  implement for javascript engine as well
+	  - Move site to its own module dir
+	  - Changed basic.sql
+	  - updates upgrade.php
+
+2013-04-12 14:26  ajjreijnders@gmail.com
+
+	* [r757] - Fix INDEX_WORKSPACE
+
+2013-04-12 14:25  ajjreijnders@gmail.com
+
+	* [r756] - Fix Create Folder
+
+2013-04-12 13:48  cross.fay@gmail.com
+
+	* [r755] HTML5 - new page templates (perspectives and
+	  thumbnailViewer)
+
+2013-04-11 21:26  cross.fay@gmail.com
+
+	* [r754] HTML5 - fixed bug where swfs weren't working in
+	  modelAnswer page
+
+2013-04-11 15:42  cross.fay@gmail.com
+
+	* [r753] HTML5
+	  - added two new optional properties to xwd (description for
+	  geocommons and movieSize for perspectives)
+	  - added next & prev button images for use on perspectives and
+	  thumbnailViewer pages and default sound image for perspectives
+	  page
+
+2013-04-09 22:00  cross.fay@gmail.com
+
+	* [r752] HTML5 -
+	  jmol page: added error message for if Java not enabled /
+	  installed,
+	  table page: added init function
+	  pages with swfs (x12): error messages made consistent for if
+	  flash not installed
+
+2013-04-09 08:37  juliantenney79@gmail.com
+
+	* [r751]
+
+2013-04-09 08:29  juliantenney79@gmail.com
+
+	* [r750] small bug in sound events in chrome fixed (thanks Dave)
+
+2013-04-08 11:01  juliantenney79@gmail.com
+
+	* [r749]
+
+2013-04-05 14:33  cross.fay@gmail.com
+
+	* [r748] HTML5 - added/styled error message on multiple pages for
+	  if browser does not fully support it (pages that use canvas tag)
+
+2013-04-05 13:30  ajjreijnders@gmail.com
+
+	* [r747] - Fixed issues with scorm tracking
+	  - Simplified export a bit (only 2 template htm needed i.s.o. 6)
+	  - Added language support to scorm tracking
+	  - Enhanced tracking
+	  - Enabled quiz tracking again, BUT differently - not finished
+	  yet!
+
+2013-04-05 12:54  cross.fay@gmail.com
+
+	* [r746] HTML5 - new inventory page incl. change to xwd to add
+	  image tooltip otion
+
+2013-04-04 15:40  cross.fay@gmail.com
+
+	* [r745] HTML5 - fixed bug in title page that meant bg image wasn't
+	  always loading
+
+2013-04-04 08:58  cross.fay@gmail.com
+
+	* [r744] HTML5 - fixed window size bug in connectorHotspotImage
+	  page
+
+2013-04-04 08:11  cross.fay@gmail.com
+
+	* [r743] HTML5 - change to image scaling in connectorHotspotImage
+	  page
+
+2013-04-03 15:48  cross.fay@gmail.com
+
+	* [r742] HTML5 - removed connectorPlainText page as it's not
+	  working properly and is no longer used anyway
+
+2013-04-03 15:46  cross.fay@gmail.com
+
+	* [r741] HTML5 - connectorHotspotImage page type completed. Minor
+	  changes to xenith.js re. openDialog function
+
+2013-04-03 10:53  ajjreijnders@gmail.com
+
+	* [r740] - Fix selection of HTML5 and Flash
+
+2013-04-02 07:00  ajjreijnders@gmail.com
+
+	* [r739] - Cleaned up export pages and javascript helper functions
+	  for xmlEngine.xml
+	  - First pass at HTML5 export.php
+	  - New way of SCORM tracking
+
+2013-03-29 09:27  jjs@gcu.ac.uk
+
+	* [r738] FIXES:
+	  1) upload iframe # problem (admin_top)
+	  2) extra </> in iframe embed code
+	  (properties/properties_library.php)
+
+2013-03-28 15:53  cross.fay@gmail.com
+
+	* [r737] HTML5:
+	  - new page type connectorHotspotImage (wip - not working in IE)
+	  - changes to dialog functions in xenith.js so they can be used by
+	  connectorHotspotImage page
+
+2013-03-27 16:25  cross.fay@gmail.com
+
+	* [r736] HTML5 - new page type cMcq
+
+2013-03-27 14:59  cross.fay@gmail.com
+
+	* [r735] HTML5 - new page type connectorMenu
+
+2013-03-25 15:48  jjs@gcu.ac.uk
+
+	* [r734] SECURITY: Update to upload.php to work in Firefox (Flash
+	  Cookie Bug) and with Moodle
+
+2013-03-25 15:10  juliantenney79@gmail.com
+
+	* [r733] save button in hotspot editor
+
+2013-03-25 08:27  ajjreijnders@gmail.com
+
+	* [r732] Moved over from xerte
+
+2013-03-23 19:14  ajjreijnders@gmail.com
+
+	* [r731] - Peer review fix: could not change peer review settings
+
+2013-03-23 17:39  ajjreijnders@gmail.com
+
+	* [r730] Oops... typo
+
+2013-03-23 13:37  ajjreijnders@gmail.com
+
+	* [r729] - Added management pages to manage languages (in the site
+	  tab)
+	  - Added user management to management page in case of Db
+	  authentication
+
+2013-03-22 16:01  cross.fay@gmail.com
+
+	* [r728] HTML5 - new page template - customHotspots
+
+2013-03-17 11:24  ajjreijnders@gmail.com
+
+	* [r727] 1. Make button labels translatable
+	  - Removed all image buttons with text, and replaced with <button>
+	  tag
+	  - Added xerte_buttons.css
+	  2. Changed all 'action' links and image inputs to <button>
+
+2013-03-15 16:10  juliantenney79@gmail.com
+
+	* [r726] Starting to look at adding navigators to the site
+	  template. Didn't get too far...
+
+2013-03-14 12:35  juliantenney79@gmail.com
+
+	* [r725]
+
+2013-03-14 12:35  juliantenney79@gmail.com
+
+	* [r724] just getting my svns working again on anew machine
+
+2013-03-14 10:52  ajjreijnders@gmail.com
+
+	* [r723] Oops - changes got lost
+
+2013-03-14 10:29  juliantenney79@gmail.com
+
+	* [r722]
+
+2013-03-14 07:20  ajjreijnders@gmail.com
+
+	* [r721] Move to UTF-8 encoding
+
+2013-03-11 16:19  julian.tenney@nottingham.ac.uk
+
+	* [r720] Some alerts for helping with the upload stuff
+
+2013-03-11 12:38  jjs@gcu.ac.uk
+
+	* [r719] Firefox/Flash session fix and blacklist - will be replaced
+	  by blacklist and mime detection at later date...
+
+2013-03-08 16:00  cross.fay@gmail.com
+
+	* [r718] HTML5 - new page model - geocommons
+
+2013-03-08 15:17  cross.fay@gmail.com
+
+	* [r717] HTML5 - new page model - Map
+
+2013-03-08 13:39  julian.tenney@nottingham.ac.uk
+
+	* [r716]
+
+2013-03-08 11:12  cross.fay@gmail.com
+
+	* [r715] HTML5 - new page - audioSlideshow
+
+2013-03-07 12:56  jjs@gcu.ac.uk
+
+	* [r714] SECURITY FIX: Patched upload to only allow whitelisted
+	  file extensions. This whitelist might not be best placed here
+	  though, and perhaps should be configurable in management.php ???
+
+2013-03-07 10:55  cross.fay@gmail.com
+
+	* [r713] HTML5 - new dragDropLabel page model
+
+2013-03-06 15:03  cross.fay@gmail.com
+
+	* [r712] Fixed bug where old projects without a navigation property
+	  were defaulting to Menu with Controls instead of Linear and no
+	  menu page was being created
+
+2013-03-05 10:53  julian.tenney@nottingham.ac.uk
+
+	* [r711] missing susbtitle control
+
+2013-03-04 20:49  ajjreijnders@gmail.com
+
+	* [r710] Added function get_email_headers() to functions.php (don't
+	  know whether that's the best location), that tries to build a
+	  proper header stringe for the php mail function:
+	  1. It adds the site_email_account as the From: header, if there
+	  is no From field in the site_details->headers field
+	  2. It adds a Content-Type header is it is not in the
+	  site_details->headers field
+	  3. It replaces the '*' with '\n' in the site_details->headers
+	  field and adds the result.
+	  Added retouremail to the peerreview form. I decided NOT to change
+	  the Database schema, but encoded the retouremail address(es) in
+	  the additional_sharing->extra field.
+
+2013-03-04 15:57  jjs@gcu.ac.uk
+
+	* [r709] PLUGINS, ACTIONS & FILTERS: This code allows you to add a
+	  'plugin' in the /plugins folder which will augment functionality
+	  provided by XOT. It allows you to create single file or folder
+	  style plugins (similar to Wordpress) which add functionality to
+	  various 'hook' points within the page. These hooks are by no
+	  means definitive and hopefully we can add lots more, however for
+	  filters to work in a better way some code will need re-written in
+	  order to pass 'content' through the filter before being used or
+	  echo-ed..
+	  
+	  The current files should do nothing to an install. The example
+	  plugins are commented out - remove the 'REMOVE_THIS' text from
+	  the filenames in order to activate. The 'GCU Plugin' demonstrates
+	  some potentially useful functionality:
+	  
+	  It adds a banner at the top of the page (login and editor)
+	  It changes the <title> text
+	  It changes the "My Projects" text to "John's Projects"
+	  It adds text to Pod 1
+	  It adds a title slide to data.xml on save
+	  
+	  The plugin_one plugin simply inserts HTML comments at action hook
+	  points throughout the page. Enable this by taking out REMOVE_THIS
+	  and then refresh the page and view the source to reveal it's
+	  result...
+
+2013-03-04 09:58  ajjreijnders@gmail.com
+
+	* [r708] Changing ownership in Management timed-out. Split and
+	  added Ajax implementation.
+
+2013-03-01 09:43  cross.fay@gmail.com
+
+	* [r707] HTML5 - bug fix - hangman page now works on iPads
+
+2013-02-28 16:04  cross.fay@gmail.com
+
+	* [r706] HTML5 - new hangman page (not currently working on iPad
+	  etc.)
+
+2013-02-27 16:21  cross.fay@gmail.com
+
+	* [r705]
+
+2013-02-27 16:05  cross.fay@gmail.com
+
+	* [r704] HTML5 - new Memory page model (incl. change to xwd to add
+	  reset button text)
+
+2013-02-22 15:50  julian.tenney@nottingham.ac.uk
+
+	* [r703]
+
+2013-02-20 16:19  jjs@gcu.ac.uk
+
+	* [r702] HTML5: Fix for dialog.html in IE. $.trim() used as IE
+	  doesn't have a String.trim() function...
+
+2013-02-20 14:57  cross.fay@gmail.com
+
+	* [r701] HTML5 - fixed duplicate button problem in flickr page
+	  model
+
+2013-02-20 14:44  cross.fay@gmail.com
+
+	* [r700] HTML5 - new imageViewer model
+
+2013-02-19 16:51  julian.tenney@nottingham.ac.uk
+
+	* [r699] JavaScript support in the site editor, and the wizard with
+	  syntax highlighting;
+
+2013-02-19 14:11  julian.tenney@nottingham.ac.uk
+
+	* [r698] JavaScript support in the editor for the site template,
+	  and in application.js for site template, so you can write code
+	  js) into the wizard
+
+2013-02-18 20:51  ajjreijnders@gmail.com
+
+	* [r697] Considerably speed up loading of workspace by modifying
+	  the query
+	  Had a case where I got a php timeout with the old query (more
+	  than 120 s!)
+
+2013-02-18 20:30  ajjreijnders@gmail.com
+
+	* [r696] - Fixed several javascript popup manipulations routines in
+	  the export htm files
+	  - Latest MainPreloader.swf in export folder
+	  - uriencode media filename to be deleted in properties_tab.js,
+	  otherwise filenames with &, etc. cannot be deleted.
+	  - Add menu.rlm always to the deployment zip, otherwise rlo's with
+	  a main menu will not show the menu
+
+2013-02-18 17:07  julian.tenney@nottingham.ac.uk
+
+	* [r695] started adding support for javascript: need to finish it
+	  in application.js to make the script tags from the content
+
+2013-02-15 12:11  julian.tenney@nottingham.ac.uk
+
+	* [r694]
+
+2013-02-15 12:05  julian.tenney@nottingham.ac.uk
+
+	* [r693]
+
+2013-02-15 10:02  julian.tenney@nottingham.ac.uk
+
+	* [r692]
+
+2013-02-14 13:47  julian.tenney@nottingham.ac.uk
+
+	* [r691]
+
+2013-02-14 13:04  gingerdog@gmail.com
+
+	* [r690] improve error handling and detection; only overwrite the
+	  original template if we can fix it up; add validation function to
+	  use; use libxml_get_errors() etc properly
+
+2013-02-13 21:54  jjs@gcu.ac.uk
+
+	* [r689] HTML5: Update to dialog.html to fix the , delimiter issue
+	  raised by Tom. There is scope for changing the delimiter to any
+	  character passed from the xml (at line 37).
+
+2013-02-13 13:25  jjs@gcu.ac.uk
+
+	* [r688] HTML5: imageViewer models_html5/imageViewer.html
+	  Only does the basic layout, none of the magnification stuff
+	  integrated yet...
+
+2013-02-12 20:46  patrick.lockley@googlemail.com
+
+	* [r687] Added scope for additional play links for each template
+
+2013-02-12 20:45  patrick.lockley@googlemail.com
+
+	* [r686] Modified display on lines in
+	  properties/properties_library.php
+	  Fixed link cursor problem with templates.php
+
+2013-02-12 14:29  julian.tenney@nottingham.ac.uk
+
+	* [r685]
+
+2013-02-12 14:16  julian.tenney@nottingham.ac.uk
+
+	* [r684]
+
+2013-02-12 14:07  julian.tenney@nottingham.ac.uk
+
+	* [r683] Fixed some badness in IE.
+
+2013-02-12 10:44  julian.tenney@nottingham.ac.uk
+
+	* [r682] Still some dependencies in the wizard for specific
+	  templates, which we need to generalise.
+
+2013-02-12 10:31  julian.tenney@nottingham.ac.uk
+
+	* [r681] Renaming 'bootstrap' to 'site'. 'Website' is the friendly
+	  name in the workspace.
+
+2013-02-12 10:25  julian.tenney@nottingham.ac.uk
+
+	* [r680]
+
+2013-02-11 13:02  jjs@gcu.ac.uk
+
+	* [r679] Fix for ?rel=0 bug
+
+2013-02-11 11:48  julian.tenney@nottingham.ac.uk
+
+	* [r678] Tidying up the main application logic
+
+2013-02-11 11:21  julian.tenney@nottingham.ac.uk
+
+	* [r677] A optional property on the LO for a tiling header
+	  background image.
+
+2013-02-11 09:59  julian.tenney@nottingham.ac.uk
+
+	* [r676] Bootstrap template works in IE
+
+2013-02-08 15:47  julian.tenney@nottingham.ac.uk
+
+	* [r675] Scrollspy works on the page TOC.
+
+2013-02-08 13:48  julian.tenney@nottingham.ac.uk
+
+	* [r674] oops
+
+2013-02-08 13:36  julian.tenney@nottingham.ac.uk
+
+	* [r673] Making a new zip - turning off bootstrap for now.
+
+2013-02-08 13:31  julian.tenney@nottingham.ac.uk
+
+	* [r672] play and preview now work for the bootstrap template
+
+2013-02-08 13:21  julian.tenney@nottingham.ac.uk
+
+	* [r671]
+
+2013-02-08 11:38  cross.fay@gmail.com
+
+	* [r670]
+
+2013-02-08 11:20  cross.fay@gmail.com
+
+	* [r669] Updated scormRLO as functions in it (e.g. makePopup)
+	  weren't up to date with those in play.html
+
+2013-02-08 10:48  julian.tenney@nottingham.ac.uk
+
+	* [r668] Preview works from the editor for the bootstrap template
+	  more or less.
+
+2013-02-07 16:13  cross.fay@gmail.com
+
+	* [r667] HTML5 - New textMatch page model
+
+2013-02-07 14:57  julian.tenney@nottingham.ac.uk
+
+	* [r666] ongoing authoring support for bootstrap template
+
+2013-02-07 13:25  cross.fay@gmail.com
+
+	* [r665]
+
+2013-02-07 12:19  cross.fay@gmail.com
+
+	* [r664] HTML5
+	  - New timeline page model (inc. new arrow.png file in
+	  common_html5 folder)
+	  - Change to categories model so it's styled correctly on LO size
+	  change
+	  - Broken link to transparent.png fixed in hotspotImage model
+
+2013-02-07 11:44  julian.tenney@nottingham.ac.uk
+
+	* [r663]
+
+2013-02-07 11:25  julian.tenney@nottingham.ac.uk
+
+	* [r662] Bootstrap template authoring support: runtime to follow
+	  when I've figured it out
+
+2013-02-07 07:18  ajjreijnders@gmail.com
+
+	* [r661] - Make labeling of new nodes more robust
+
+2013-02-05 10:44  julian.tenney@nottingham.ac.uk
+
+	* [r660] Bug fix for initObject on loaded SWFs
+
+2013-02-02 22:29  ajjreijnders@gmail.com
+
+	* [r659] 1. Enable the possibility to translate the names of the
+	  nodes (of the wizard)
+	  2. Only list actually installed languages in the language
+	  selection list of xot itself
+
+2013-02-01 16:06  cross.fay@gmail.com
+
+	* [r658] HTML5 - small change to categories page to fix dragging
+	  bug in IE
+
+2013-02-01 14:18  julian.tenney@nottingham.ac.uk
+
+	* [r657] steps towards finishing off this flash - firefox - session
+	  problem to make upload secure...
+
+2013-02-01 10:53  julian.tenney@nottingham.ac.uk
+
+	* [r656]
+
+2013-02-01 10:42  ajjreijnders@gmail.com
+
+	* [r655] Oops, forgot to commit these...
+
+2013-02-01 10:20  julian.tenney@nottingham.ac.uk
+
+	* [r654] I cannot get the session thing to work in firefox from
+	  flash. I thought it did, but it doesn't work. Needs looking at by
+	  someone who has half a clue about .php sessions.
+
+2013-02-01 09:24  julian.tenney@nottingham.ac.uk
+
+	* [r653]
+
+2013-01-31 16:25  cross.fay@gmail.com
+
+	* [r652] HTML5 - categories page type updated to improve
+	  accessibility - it now works using keyboard only as well as
+	  normal drag and drop
+
+2013-01-31 09:35  julian.tenney@nottingham.ac.uk
+
+	* [r651] Stops the quiz showing a scrollbar if there is no feedback
+	  to display
+
+2013-01-31 09:16  cross.fay@gmail.com
+
+	* [r650] HTML5 - small change to the way feedback displays in quiz
+	  page
+
+2013-01-30 17:00  cross.fay@gmail.com
+
+	* [r649] HTML5 - new categories page type (accessibility will be
+	  improved but currently works fine with mouse)
+
+2013-01-29 14:37  julian.tenney@nottingham.ac.uk
+
+	* [r648] Fixed the firefox dropping session security thing for
+	  uploading media. Please check, especially if you have knowledge
+	  of Moodle and sessions...
+
+2013-01-28 16:47  julian.tenney@nottingham.ac.uk
+
+	* [r647]
+
+2013-01-28 16:28  julian.tenney@nottingham.ac.uk
+
+	* [r646]
+
+2013-01-25 22:15  gingerdog@gmail.com
+
+	* [r644] remove pointless validation code from js - this does not
+	  protect from sql injection
+
+2013-01-25 22:14  gingerdog@gmail.com
+
+	* [r643] remove pointless validation code from js - this does not
+	  protect from sql injection
+
+2013-01-25 15:20  ajjreijnders@gmail.com
+
+	* [r642] 1. Added an optional parameter visuals (Flash Engine
+	  Visuals) for the learningObject in data.xwd. This is exactly the
+	  same as the visuals of IFC (in standalone Xerte). It enables to
+	  have a white default player without the accessibility buttons. I
+	  still need to implement a way to get those back by a key press.
+	  It makes the LO easier for children with ADD or ADHD. The visuals
+	  of the learningObject has priority over the visuals of IFC. It
+	  doesn't have any effect on the HTML5 code.
+	  
+	  2. Added a parameter language (Language) to the learningObject in
+	  data.xwd. The parameter itself was already in, but you could not
+	  edit it.
+	  
+	  3. Changed code, so that the language parameter of learningObject
+	  has precedence over the language of LO. This is a change that
+	  should be checked in HTML5.
+	  
+	  4. Modified the language selection code of XOT (it now uses the
+	  language-config.xml file to present the available options, and it
+	  is available in the workspace, so now you can change languages
+	  even if you use some kind of integration or guest access. (It
+	  used to available on the login page only)
+	  
+	  5. Added a 'LanguageList'type in the wizard. It presents a
+	  combobox populated with the languages in language-config.xml.
+	  This is used in 2.
+	  
+	  6. Changed the wizard so that the popup messages can be
+	  translated as well.
+
+2013-01-25 14:45  cross.fay@gmail.com
+
+	* [r641] HTML5 - Added extra options (Top & Bottom) to Align Text
+	  for textVideo page
+
+2013-01-25 13:58  julian.tenney@nottingham.ac.uk
+
+	* [r640]
+
+2013-01-25 12:12  gingerdog@gmail.com
+
+	* [r639] perhaps work with windows better.
+
+2013-01-25 12:09  gingerdog@gmail.com
+
+	* [r638] suppress errors from touch() with @.
+
+2013-01-25 11:40  julian.tenney@nottingham.ac.uk
+
+	* [r637]
+
+2013-01-25 11:39  gingerdog@gmail.com
+
+	* [r636] Refactor template loading/finding in config.php - this
+	  shouldn't include ".svn", ".AppleDouble" or any other hidden
+	  files. It might also be easier to understand.
+
+2013-01-24 15:52  cross.fay@gmail.com
+
+	* [r635] HTML5 - fixed bug with clearInterval that meant on the 1st
+	  view of bullet pages only the 1st bullet would show
+
+2013-01-24 15:20  cross.fay@gmail.com
+
+	* [r634] HTML5 - chart.html updated following screenreader testing
+
+2013-01-24 15:13  cross.fay@gmail.com
+
+	* [r633] HTML5 - Bug fixes following SupaNova screenreader testing.
+	  Tab index added to pages where the introduction text was being
+	  skipped
+
+2013-01-24 14:29  cross.fay@gmail.com
+
+	* [r632] HTML5 - Bug fixes following SupaNova screenreader testing.
+	  Tab index added to pages using splitScreen css class to stop the
+	  intro text being skipped
+
+2013-01-24 13:39  cross.fay@gmail.com
+
+	* [r631] HTML5 - Bug fix to buttonSequence page. It no longer skips
+	  the 1st caption
+
+2013-01-24 11:59  cross.fay@gmail.com
+
+	* [r630] HTML5 - New quiz page type (including changes to quiz in
+	  xwd - new movie size optional property and fixed bug with image
+	  tooltip type in wizard)
+	  New style in mainStyles.css for disabled buttons
+
+2013-01-17 11:17  gingerdog@gmail.com
+
+	* [r629] s/require/require_once
+
+2013-01-17 11:14  gingerdog@gmail.com
+
+	* [r628] disable code which seems to not work due to $_POST
+	  structure; $_POST["template_id"] is not defined, so change to use
+	  filename for logging; remove whitespace at the end of the file
+
+2013-01-17 10:17  gingerdog@gmail.com
+
+	* [r627] improve debug logging etc; make destination file
+	  configurable. config.php, functions.php
+
+2013-01-17 10:10  gingerdog@gmail.com
+
+	* [r626] improve documentation; reindent (auth_config.php)
+
+2013-01-17 10:09  gingerdog@gmail.com
+
+	* [r625] reorder so the comment is in the right place; reindent
+
+2013-01-16 15:59  cross.fay@gmail.com
+
+	* [r624] HTML5
+	  - Added historical back / home button functionality
+	  - Added navigation buttons optional property functionality
+	  - MathML equations now work on any page
+
+2013-01-12 23:51  patrick.lockley@googlemail.com
+
+	* [r623] Fixed table prefix bug
+
+2013-01-09 19:11  patrick.lockley@googlemail.com
+
+	* [r620] short codes d'oh
+
+2013-01-09 10:01  cross.fay@gmail.com
+
+	* [r619] HTML5 - fixed textVideo dimensions bug
+
+2013-01-08 15:32  julian.tenney@nottingham.ac.uk
+
+	* [r618] Attempt at security fix. Needs more work to make this more
+	  robust.
+
+2013-01-04 13:29  cross.fay@gmail.com
+
+	* [r616] HTML5 - new page models: modelAnswer.html &
+	  modelAnswerResults.html
+
+2013-01-04 09:10  cross.fay@gmail.com
+
+	* [r615] Fixed bug in modelAnswer.xwd - Image tooltip had type as
+	  TextEntry - should have been TextInput
+
+2013-01-03 16:16  cross.fay@gmail.com
+
+	* [r614] HTML5 - minor change to morphImage load & added init
+	  function to transcriptReader
+
+2013-01-03 14:24  cross.fay@gmail.com
+
+	* [r613] HTML5 -
+	  xenith.js: fixed glossary bug on iPads
+	  annotatedDiagram.html: hotspot background image url changed
+	  textGraphics.html: several bug fixes - 1. disabled magnifier on
+	  touchscreen or if image is displayed as 80%+ of original, 2.
+	  audio bar width now changes with image size, 3. fixed image
+	  scaling problems when full screen, 4. transcript text area width
+	  fixed to width of image
+
+2013-01-02 16:45  cross.fay@gmail.com
+
+	* [r612] HTML5 - changes to annotatedDiagram so Top alignment now
+	  works
+
+2013-01-02 15:12  cross.fay@gmail.com
+
+	* [r611] HTML5 - Added movieSize optional attribute to jing page
+
+2013-01-02 13:04  cross.fay@gmail.com
+
+	* [r610] New optional attribute added to embedDiv page so text can
+	  also be added to page. Flash & HTML5 models updated.
+
+2013-01-02 11:20  cross.fay@gmail.com
+
+	* [r609] HTML5 - Added LaTex support. Combined functions that dealt
+	  with finding and replacing glossary and page links (functions
+	  x_findText & x_insertText now deal with glossary links, pages
+	  links and inserting LaTeX images)
+
+2012-12-20 23:29  patrick.lockley@googlemail.com
+
+	* [r608] Removed print_r
+
+2012-12-15 18:42  patrick.lockley@googlemail.com
+
+	* [r607] fixed bugs, removed messages
+
+2012-12-14 00:42  patrick.lockley@googlemail.com
+
+	* [r606] Fixed import and rename errors in IE
+
+2012-12-13 15:46  cross.fay@gmail.com
+
+	* [r605] HTML5 - table model, fixed full screen table size bug
+
+2012-12-13 15:20  jjs@gcu.ac.uk
+
+	* [r604] HTML5: Fix to ensure page finishes loading if there are no
+	  shapes on the drawing area.
+
+2012-12-13 15:07  jjs@gcu.ac.uk
+
+	* [r603] HTML5: chart - fixed issue with y-axis labels when using
+	  stacked bar.
+
+2012-12-13 14:32  julian.tenney@nottingham.ac.uk
+
+	* [r602]
+
+2012-12-13 13:18  julian.tenney@nottingham.ac.uk
+
+	* [r601]
+
+2012-12-13 11:39  jjs@gcu.ac.uk
+
+	* [r600] HTML5: Updated chart to include text labels (x axis).
+
+2012-12-13 09:44  cross.fay@gmail.com
+
+	* [r599] HTML5 - fixed page linking bug so that it now works with
+	  menu navigation too
+
+2012-12-12 13:15  cross.fay@gmail.com
+
+	* [r598] HTML5 bug fixes to interaction page timers:
+	  - timers reset on page change
+	  - timer bar is removed on page change
+	  - strings now come from language file
+
+2012-12-12 11:49  jjs@gcu.ac.uk
+
+	* [r597] HTML5: Fixed page linking from any pagetype within fields:
+	  
+	  "text", "instruction", "instructions", "answer", "description",
+	  "prompt", "hint", "feedback", "summary", "intro", "txt", "goals",
+	  "audience", "prereq", "howto"
+	  
+	  Same as glossary!!
+
+2012-12-12 11:24  cross.fay@gmail.com
+
+	* [r596] HTML5 - dialog page - fixed bug in IE/Opera where pressing
+	  Enter key instead of clicking Submit button messed up display of
+	  hint/correct answer text
+
+2012-12-12 10:01  julian.tenney@nottingham.ac.uk
+
+	* [r595] --THIS IS 1.9 MANY THANKS FOR EVERYONES CONTRIBUTIONS TO
+	  THIS RELEASE. GREAT STUFF.--
+
+2012-12-12 01:20  patrick.lockley@googlemail.com
+
+	* [r594] fixed problem with this file due to dodgy cut and paste
+
+2012-12-12 01:19  patrick.lockley@googlemail.com
+
+	* [r593] Fixed window close bug
+
+2012-12-12 01:19  patrick.lockley@googlemail.com
+
+	* [r592] Altered code
+
+2012-12-12 01:18  patrick.lockley@googlemail.com
+
+	* [r591] fixed bugs but left trace in for debugging
+
+2012-12-11 22:16  jjs@gcu.ac.uk
+
+	* [r590] HTML5: An attempt at Flickr model. Needs work...
+	  
+	  Needs to preload next image to be of any use as it's too slow
+	  changing pictures due to the 3 ajax calls.
+
+2012-12-10 12:49  patrick.lockley@googlemail.com
+
+	* [r589] test version, removed the offending code
+	  Works on XAMPP
+	  Needs testing on a server
+
+2012-12-10 11:20  jjs@gcu.ac.uk
+
+	* [r588] HTML5: In IE chart.html now just displays a 'browser not
+	  supported' message, taken from the language file.
+
+2012-12-10 09:57  julian.tenney@nottingham.ac.uk
+
+	* [r587] Pats fix for publishing from the wizard window onclose
+	  event
+
+2012-12-09 22:21  jjs@gcu.ac.uk
+
+	* [r586] HTML5: fixed a problem with delicious spinner not showing
+	  correctly.
+
+2012-12-09 17:12  jjs@gcu.ac.uk
+
+	* [r585] HTML5: Updated $headerBlock to $x_headerBlock. imageLens
+	  still doesn't magnify an image that is already at 100% so it's
+	  really only windowing the image. Have left the 3px by 3px offset.
+
+2012-12-08 22:13  jjs@gcu.ac.uk
+
+	* [r584] HTML5: First attempt at wiki.html model.
+
+2012-12-08 18:33  jjs@gcu.ac.uk
+
+	* [r583] HTML5: First attempt at chart.html
+	  Hope to keep the canvas area small enough to prevent scrolling.
+	  Will need to revise some of the calculations. Please test!!
+
+2012-12-08 11:06  jjs@gcu.ac.uk
+
+	* [r582] HTML5: Added countdown timer. Still needs to English text
+	  substituted with language references.
+
+2012-12-07 22:14  jjs@gcu.ac.uk
+
+	* [r581] HTML5: fix for nasty IE handling of button click when only
+	  one option in mcq model
+
+2012-12-07 11:14  julian.tenney@nottingham.ac.uk
+
+	* [r580]
+
+2012-12-06 22:26  ronm123@googlemail.com
+
+	* [r579] update from Pat to fix ability to create one project
+	  immediately after another which at some point must have crept in
+	  as a bug.
+
+2012-12-05 16:01  ronm123@googlemail.com
+
+	* [r578] Pat added a DB query which seems to fix an issue when
+	  creating new projects with Moodle integration enabled.
+
+2012-12-05 16:00  ronm123@googlemail.com
+
+	* [r577] Pat found and removed a duplicate require path. May not
+	  have been causing a problem unless Moodle integration used but
+	  the same file shouldn't be required twice in the same page anyway
+	  - at least not one line below the other.
+
+2012-12-05 15:57  ronm123@googlemail.com
+
+	* [r576] removed an extra brace which was commented out anyway.
+
+2012-12-04 16:31  julian.tenney@nottingham.ac.uk
+
+	* [r575]
+
+2012-12-03 21:09  jjs@gcu.ac.uk
+
+	* [r574] HTML5: Added SHIFT and CAPS handlers and a Caps button to
+	  language.html model. Language popup now also only shows if there
+	  is more than 1 character in x_specialChars array.
+
+2012-12-03 13:15  mr.johnathan.kemp@gmail.com
+
+	* [r573] JK added support for external help files to connector
+	  pages and made the navigation button settings on the Connector
+	  pages optional so that it will be possible for Authors to modify
+	  the navigation settings for Connector pages created prior to the
+	  introduction of the Navigation Buttons feature.
+
+2012-12-01 22:05  jjs@gcu.ac.uk
+
+	* [r572] HTML5: Fixed swf overlapping menu in IE (wmode:opaque)
+
+2012-11-30 16:01  cross.fay@gmail.com
+
+	* [r571] HTML5
+	  - videoSynch: added movie size option to xwd
+	  - xerteModel: added errot text language option to xwd
+
+2012-11-30 15:31  cross.fay@gmail.com
+
+	* [r570] HTML5 - removed timeline model as it's not ready for
+	  release
+
+2012-11-30 15:30  cross.fay@gmail.com
+
+	* [r569] HTML5
+	  - added new functions to xenith.js x_sortInitObject & x_getSWFRef
+	  - both used on pages with swfs
+	  - added init function to several page models
+	  - xerteModel: initObject functionality added
+	  - textSWF: swfs now pause as soon as loaded and default is now to
+	  show controls
+	  - morphImages: fixed onload bug
+
+2012-11-30 08:42  ronm123@googlemail.com
+
+	* [r568] still haven't resolved issue on techdis server but it's
+	  clear this file isn't the cause so just correcting the default
+	  auth back to guest.
+
+2012-11-29 16:42  cross.fay@gmail.com
+
+	* [r567] HTML5 - image scaling bug fixed in list page
+
+2012-11-29 15:51  cross.fay@gmail.com
+
+	* [r566] HTML5
+	  - Fixed image scaling problems on navigators
+	  column/accNav/btnNav/slideshow/tabNav
+	  - Fixed bug on newWindow that stopped it loading
+	  - Added page type on to end of 'No page template' error message
+
+2012-11-29 11:28  cross.fay@gmail.com
+
+	* [r565] HTML5 - delicious/youtuberss/dialog: Words now come from
+	  language files, Bug fix to textVideo/videoSynch for iPads
+
+2012-11-29 10:44  julian.tenney@nottingham.ac.uk
+
+	* [r564] Optional videoSize determines the constraints for the
+	  preview image. Not relevant to HTML5.
+
+2012-11-29 10:38  mr.johnathan.kemp@gmail.com
+
+	* [r563] JK updated data.xwd after rebuild to include Fay's changes
+
+2012-11-28 23:55  jjs@gcu.ac.uk
+
+	* [r562] HTML5: Added in a page type not fully supported message
+	  and fixed a canvas.height problem when using text
+
+2012-11-28 22:09  patrick.lockley@googlemail.com
+
+	* [r561] Fixed the .info bug
+
+2012-11-28 16:02  cross.fay@gmail.com
+
+	* [r560] HTML5 - Changes made to QRcode page: nit function added,
+	  unnecessary code removed (trasncript / magnifier etc), link now
+	  opens in new window
+
+2012-11-28 15:43  julian.tenney@nottingham.ac.uk
+
+	* [r559]
+
+2012-11-28 13:59  cross.fay@gmail.com
+
+	* [r558] HTML5
+	  - delicious/rss/youtuberss: minor changes to result layout
+	  - delicious: links now open in new window
+	  - youtube: old youtube object embed code now works
+	  - textVideo/videoSynch: look for mp4 to use instead if flv viewed
+	  on iPad/iPhone
+
+2012-11-28 10:39  julian.tenney@nottingham.ac.uk
+
+	* [r557] PAgeList control now has empty first item; youtube preview
+	  images a little smaller on the page.
+
+2012-11-27 22:12  cross.fay@gmail.com
+
+	* [r556] HTML5:
+	  - delicious/rss/youtube/youtuberss: language data now comes from
+	  xwd/main lang files
+	  - new phrases added to engine_en-GB.xml for pages that load data
+	  - delicious/rss: added h3 tags
+	  - added init function to several page model files
+
+2012-11-26 23:25  cross.fay@gmail.com
+
+	* [r555] HTML5 bug fixes - slideshow: align image attribute fixed,
+	  dialog: line breaks now show correctly, list: now possible to
+	  include swf in panel, modify: changed margin on 1st p tag so
+	  consistent with text on other pages
+
+2012-11-26 20:16  ronm123@googlemail.com
+
+	* [r554]
+
+2012-11-26 20:16  ronm123@googlemail.com
+
+	* [r553] extracted the commented authentication options from
+	  config.php and added to a required file named auth_config.php.
+	  This means when updating/upgrading config.php can be overwritten
+	  without changing the authentication method back to Guest. When
+	  updating/upgrading auth_config.php should be excluded or
+	  re-edited after update. Updated the moodle_integration_readme.txt
+	  instructions to reflect this change.
+
+2012-11-26 15:48  mr.johnathan.kemp@gmail.com
+
+	* [r552] JK fixed a bug in Scenario model and tidied up a couple of
+	  xwds.
+
+2012-11-26 14:52  jjs@gcu.ac.uk
+
+	* [r551]
+
+2012-11-26 14:47  jjs@gcu.ac.uk
+
+	* [r550] HTML5: fix to catch single number text strings that
+	  somehow get cast to type Number instead of String.
+
+2012-11-26 12:09  julian.tenney@nottingham.ac.uk
+
+	* [r549] Fixed switched round peer review subject and message
+
+2012-11-25 19:45  jjs@gcu.ac.uk
+
+	* [r548] HTML5: textDrawing.html - Uses canvas where possible and
+	  can display all 15 shape types accurately. Falls back to HTML4
+	  and can render images, rectangles and freehand in an HTML4 div.
+
+2012-11-24 22:00  mr.johnathan.kemp@gmail.com
+
+	* [r547] JK Added updates to scenario and connector multiple choice
+	  and regenerated data.xwd file.
+
+2012-11-23 10:52  julian.tenney@nottingham.ac.uk
+
+	* [r546]
+
+2012-11-23 10:37  julian.tenney@nottingham.ac.uk
+
+	* [r545]
+
+2012-11-22 23:14  patrick.lockley@googlemail.com
+
+	* [r544] Modularised
+
+2012-11-22 23:14  patrick.lockley@googlemail.com
+
+	* [r543] Modularised
+
+2012-11-22 23:14  patrick.lockley@googlemail.com
+
+	* [r542] Added modularisation
+
+2012-11-22 23:13  patrick.lockley@googlemail.com
+
+	* [r541] Added .info file
+
+2012-11-22 23:13  patrick.lockley@googlemail.com
+
+	* [r540] Modularised
+
+2012-11-22 23:11  patrick.lockley@googlemail.com
+
+	* [r539] Modularised
+
+2012-11-22 23:11  patrick.lockley@googlemail.com
+
+	* [r538] Modularised
+
+2012-11-22 23:10  patrick.lockley@googlemail.com
+
+	* [r537]
+
+2012-11-22 23:10  patrick.lockley@googlemail.com
+
+	* [r536] Modularised
+
+2012-11-22 23:09  patrick.lockley@googlemail.com
+
+	* [r535] Modularised
+
+2012-11-22 23:09  patrick.lockley@googlemail.com
+
+	* [r534] Modularised
+
+2012-11-22 23:09  patrick.lockley@googlemail.com
+
+	* [r533] Added changes to allow for modularisation of displaying
+	  different templates
+
+2012-11-22 23:08  patrick.lockley@googlemail.com
+
+	* [r532] Changes to JS to allow for modularisation
+
+2012-11-22 23:07  patrick.lockley@googlemail.com
+
+	* [r531] Modifications to XOT language files
+
+2012-11-22 23:06  patrick.lockley@googlemail.com
+
+	* [r530] New language files
+
+2012-11-22 23:06  patrick.lockley@googlemail.com
+
+	* [r529] New language files
+
+2012-11-22 22:35  mr.johnathan.kemp@gmail.com
+
+	* [r528] Added support for historic navigation and all pages being
+	  able to set which navigation buttons are displayed. Updated
+	  versions of connectorHotspotImage and connectorMenu which use
+	  pageList and linkID. Removed plain text connector, tabbed nav
+	  connector and redirector connector as these are now obsolete
+	  given the new ability to add pageLinks to text.
+
+2012-11-22 17:09  cross.fay@gmail.com
+
+	* [r527] HTML5 bug fixes, menu: bg image would only appear on 1st
+	  page view, bullets: timing problem fixed and line break problem
+	  in chrome, links: line break problem fixed,
+	  buttonNav/slideshow/tabNav: scroll to top on change, column: swfs
+	  can now be added and the whole page scrolls rather than
+	  individual columns, init function added to several page models
+
+2012-11-22 12:47  cross.fay@gmail.com
+
+	* [r526] Change to import.php as it wasn't working with html5 files
+	  in zip
+
+2012-11-22 11:39  julian.tenney@nottingham.ac.uk
+
+	* [r525]
+
+2012-11-21 22:43  jjs@gcu.ac.uk
+
+	* [r524] HTML5: youtube.html
+	  Fixed IE fullscreen issue.
+	  Fixed menu under iframe issue (wmode=opaque).
+	  Added code to process videoSize parameter, if available. It takes
+	  priority over iframe code
+	  Added 4th option (just in case) - an 11 character code is taken
+	  as the Youtube video ID
+
+2012-11-21 15:06  cross.fay@gmail.com
+
+	* [r523] HTML5 - New slideshow page model. Fixed accessibility
+	  issues in accNav & buttonNav - you can now navigate using tab
+	  rather than arrows. Fixed accessibility bug in bleedingImage -
+	  link now highlights on focus. Added missing </p> in xenith.js
+
+2012-11-21 14:07  julian.tenney@nottingham.ac.uk
+
+	* [r522]
+
+2012-11-21 10:26  jjs@gcu.ac.uk
+
+	* [r521] HTML5: youtube.html
+	  
+	  Still to do:
+	  autoplay="true"
+	  toggle="true"
+	  videoSize="600x400"
+	  
+	  although not actually sure if they do anything or are required
+	  any more??
+
+2012-11-19 22:41  jjs@gcu.ac.uk
+
+	* [r520] HTML5: Added some code to switch between the 'default' and
+	  'mobile' URLs, depending on the device. iOS, touchScreen or
+	  mobile gets the 'mobile' version now.
+
+2012-11-19 21:15  jjs@gcu.ac.uk
+
+	* [r519] HTML5: Dirty hack to allow IE to parse YouTubeRSS JSON
+	  object which uses "default" which should be a reserved word
+	  although Chrome and Firefox don't seem to care!!
+
+2012-11-19 13:50  jjs@gcu.ac.uk
+
+	* [r518] HTML5: morphImages.html - hide then fadeIn image on load
+	  in order to prevent flicker.
+
+2012-11-19 11:25  ronm123@googlemail.com
+
+	* [r517] Additions to allow rss to display html5 links rather than
+	  flash links by appending ?html5 or &html5 if more than one
+	  parameter. Have tested this with site rss, username rss and
+	  folder rss. All works with both default links and apache links
+	  but the latter needs additions to .htaccess
+	  Will post to dev list regarding the latter. Also wondering about
+	  displaying additional info in the rss properties tab.
+
+2012-11-18 14:17  ajjreijnders@gmail.com
+
+	* [r516] Replace ' by " (Xertetrans expects ")
+
+2012-11-18 08:31  jjs@gcu.ac.uk
+
+	* [r515] HTML5: Fixed spinner and layout in youtuberss model. Div
+	  layout still not 100% correct - descriptions may overlap on small
+	  screen device.
+	  
+	  Slight formatting only in rss model.
+
+2012-11-17 21:21  jjs@gcu.ac.uk
+
+	* [r514] Just formatting and comment removal.
+
+2012-11-17 21:20  jjs@gcu.ac.uk
+
+	* [r513] HTML5: Delicious model - Fixed spinner issue and error
+	  message when xml doesn't load. Tag search still returns 0 results
+	  but have emailed Delicious Team again about progress with their
+	  upgrades...
+	  
+	  Still needs to get English messages from language files
+
+2012-11-17 17:07  jjs@gcu.ac.uk
+
+	* [r512] HTML5: Fixed spinner issue and error message when xml
+	  doesn't load.
+
+2012-11-17 16:43  jjs@gcu.ac.uk
+
+	* [r511] HTML5: Fixed the need to call x_navigateToPage twice.
+	  First page now loaded correctly if pageID or linkID doesn't exist
+	  or page= number is out of bounds.
+
+2012-11-16 22:37  jjs@gcu.ac.uk
+
+	* [r510] Catch error thrown when you call sizeChanged() on an
+	  unloaded model
+
+2012-11-16 16:03  cross.fay@gmail.com
+
+	* [r509] HTML5 - New transcriptReader page
+
+2012-11-16 14:15  cross.fay@gmail.com
+
+	* [r508] HTML5 - new synchedVideo page and fixed bug in xenith.js
+	  where 1st page was sometimes missed off contents page
+
+2012-11-16 13:55  jjs@gcu.ac.uk
+
+	* [r507] Updates to make page= 1-index based 1, 2, 3, etc
+	  If anything outside page range now goes to page 1
+
+2012-11-16 11:51  cross.fay@gmail.com
+
+	* [r506] Update to engine_en-GB.xml (it had some words missing that
+	  were in version in xerte svn)
+
+2012-11-16 11:45  cross.fay@gmail.com
+
+	* [r505] HTML5 - New info added to language file for mediaelement
+	  controls, glossary button, error messages, kblang, tick/cross
+	  images. Fixed bug so narration bar width now updates if full
+	  screen and window size is changed
+
+2012-11-16 11:45  julian.tenney@nottingham.ac.uk
+
+	* [r504]
+
+2012-11-16 11:14  julian.tenney@nottingham.ac.uk
+
+	* [r503]
+
+2012-11-16 09:35  julian.tenney@nottingham.ac.uk
+
+	* [r502]
+
+2012-11-15 23:29  jjs@gcu.ac.uk
+
+	* [r501] Changes to allow deep linking using linkID, pageID or page
+	  = # (0 indexed)
+
+2012-11-15 16:38  cross.fay@gmail.com
+
+	* [r500] HTML5 - Changed navigator models so they can now show swfs
+	  as well as images on them
+
+2012-11-15 14:23  cross.fay@gmail.com
+
+	* [r499] HTML5 - fixed bugs in bullet page (remove blank lines) &
+	  added new jmol page
+
+2012-11-15 10:57  ajjreijnders@gmail.com
+
+	* [r498] Fix unescaped '&' before showing.
+
+2012-11-14 16:11  ronm123@googlemail.com
+
+	* [r497] additional play_html5.php link in LO properties window
+	  including language string. Probably ought to have an additional
+	  embed code text box for the html 5 version too.
+
+2012-11-14 16:10  ronm123@googlemail.com
+
+	* [r496]
+
+2012-11-14 15:52  cross.fay@gmail.com
+
+	* [r495] html5: fixed line breaks bug, fixed bugs on newWindow,
+	  embedDiv and title pages, completed textVideo page, new
+	  xerteModel page added
+
+2012-11-14 14:42  julian.tenney@nottingham.ac.uk
+
+	* [r494] Fixed youtube issue with old videos
+
+2012-11-14 14:04  julian.tenney@nottingham.ac.uk
+
+	* [r493] Fixed the issue with access == other not persisting the
+	  tick
+
+2012-11-14 11:40  ronm123@googlemail.com
+
+	* [r492] This version requires rss proxy but works fine from XOT. I
+	  haven't yet been able to get John's suggestions to work so
+	  thought it worth committing this in the meantime.
+
+2012-11-14 11:31  julian.tenney@nottingham.ac.uk
+
+	* [r491] Added a CTRL-down condition to fire the html5 preview when
+	  pressing the preview button, so users can easily preview in HTML5
+	  mode (this change to wizard only)
+
+2012-11-13 18:11  ronm123@googlemail.com
+
+	* [r490] this is the version with oninitcomplete uploaded by Julian
+	  to Xerte svn but not XOT svn. This is required for the
+	  deeplinking to work.
+
+2012-11-13 14:36  ronm123@googlemail.com
+
+	* [r489] Moodle authentication readme tweaked slightly based on
+	  feedback from the technical mailing list
+
+2012-11-12 12:17  ronm123@googlemail.com
+
+	* [r480] function required for deeplinking
+
+2012-11-12 12:15  ronm123@googlemail.com
+
+	* [r479] js required for deeplinking
+
+2012-11-12 12:13  ronm123@googlemail.com
+
+	* [r478] oninitComplete added for deeplinking - currently works
+	  fine from XOT with all browsers apart from IE. Works fine with IE
+	  via an uploaded LO too so seems to be a conflict with play.php or
+	  something linked in play.php Requires a new function in
+	  rloObject.js comitted separately
+
+2012-11-12 10:37  jjs@gcu.ac.uk
+
+	* [r477] Refactored some code.
+	  
+	  Navigation buttons still not being consistently hidden?!?
+
+2012-11-12 10:22  julian.tenney@nottingham.ac.uk
+
+	* [r476] Fixed the non-scrolling audio slideshow children
+
+2012-11-10 13:23  jjs@gcu.ac.uk
+
+	* [r475] Extra check for when lang = "undefined" as opposed to just
+	  being undefined
+
+2012-11-10 13:07  jjs@gcu.ac.uk
+
+	* [r474] Catch when the LO icon has been added but no URL set.
+
+2012-11-09 16:26  jjs@gcu.ac.uk
+
+	* [r473] First attempt at connector (few updates to xenith to do a
+	  callback to the model)
+
+2012-11-09 15:16  jjs@gcu.ac.uk
+
+	* [r472] x_pageInfo now also holds any linkID and pageIDs
+	  
+	  Also added 3 functions to help with page linking:
+	  
+	  x_addPageLinks - processes the asfunction links to add page link
+	  functionality
+	  x_navigateToPage - go to either page number, linkID or pageID
+	  x_lookupPage - finds pageID or linkID in the pageInfo array and
+	  returns page number
+
+2012-11-06 14:58  julian.tenney@nottingham.ac.uk
+
+	* [r471]
+
+2012-11-06 11:14  julian.tenney@nottingham.ac.uk
+
+	* [r470]
+
+2012-11-06 11:13  julian.tenney@nottingham.ac.uk
+
+	* [r469]
+
+2012-11-06 11:12  julian.tenney@nottingham.ac.uk
+
+	* [r468] Added a page timer optional property to the interactions
+	  templates
+
+2012-11-02 11:13  simon.atack@nottingham.ac.uk
+
+	* [r467] Bug Fix: Other Authentication was broken as the function
+	  it was calling wasnt available since the include was missing (now
+	  added correct include)
+
+2012-10-31 22:59  jjs@gcu.ac.uk
+
+	* [r466]
+
+2012-10-31 22:59  jjs@gcu.ac.uk
+
+	* [r465] Added spinner and css class and updated rss.html
+	  Still not really working right...
+
+2012-10-31 21:03  jjs@gcu.ac.uk
+
+	* [r464] Standard properties all appear to work...
+	  Uses Google Feeds API to do a JSONP ajax call.
+
+2012-10-31 16:31  ajjreijnders@gmail.com
+
+	* [r463] Fix url_library.php for rich scorm export in case of
+	  apache rewrites
+
+2012-10-31 11:28  cross.fay@gmail.com
+
+	* [r462] HTML5 files
+
+2012-10-30 14:21  gingerdog@gmail.com
+
+	* [r461] fix invalid url - href seems to miss .php
+
+2012-10-30 14:19  gingerdog@gmail.com
+
+	* [r460] improvements to template import - remove undefined
+	  variables; better logging if permission errors are in place etc
+
+2012-10-29 15:58  gingerdog@gmail.com
+
+	* [r459] change has_rights_to_this_template() to use prepared
+	  statement query
+
+2012-10-29 15:56  gingerdog@gmail.com
+
+	* [r458] getfile.php: improve download; fix validation of file
+	  name; better access checking
+
+2012-10-23 06:59  ajjreijnders@gmail.com
+
+	* [r457] - Prevent a lot of notices about redeines in development
+	  mode
+	  - Make sure the link and Embed code are visible when Access is
+	  'Other'
+
+2012-10-20 20:52  ajjreijnders@gmail.com
+
+	* [r456] Use a temporary zip file in stead of a zip in memory,
+	  otherwise you can't export anything that doesn't fit in the
+	  memory limits of php.
+
+2012-10-20 20:51  ajjreijnders@gmail.com
+
+	* [r455] Replaced __DIR__ by dirname(__FILE__) (as __DIR__ needs
+	  php > 5.3
+
+2012-10-17 15:24  julian.tenney@nottingham.ac.uk
+
+	* [r454] fixed issue with narration path
+
+2012-10-16 15:43  julian.tenney@nottingham.ac.uk
+
+	* [r453]
+
+2012-10-16 14:30  julian.tenney@nottingham.ac.uk
+
+	* [r452] Incorrect paths in the navigators for handling initObjects
+	  and custom flash movies.
+
+2012-10-12 11:20  ajjreijnders@gmail.com
+
+	* [r451] Fix xml error on export with non-escaped '&'
+
+2012-10-09 14:06  simon.atack@nottingham.ac.uk
+
+	* [r449] Bug Fixes: Update to fix LTI provider as session not
+	  existing under some circumstances.
+
+2012-10-09 13:49  simon.atack@nottingham.ac.uk
+
+	* [r448] Update to fix LTI provider as session not existing under
+	  some circumstances
+
+2012-10-09 13:46  simon.atack@nottingham.ac.uk
+
+	* [r447] Update to fix LTI provider as session not existing under
+	  some circumstances
+
+2012-10-09 12:39  simon.atack@nottingham.ac.uk
+
+	* [r446] Update to fix LTI provider as session not existing under
+	  some circumstances
+
+2012-10-08 15:26  simon.atack@nottingham.ac.uk
+
+	* [r445] Now if logged in via LTI then it doesn't need to re
+	  authenticate if the link is a password protected project
+
+2012-10-08 14:51  simon.atack@nottingham.ac.uk
+
+	* [r444] Bug Fixes: Allow Password protected projects to list a url
+	  in the properties. Allow password protected projects to
+	  successfully authenticate (now using same code as LTI and
+	  index.php)
+
+2012-10-03 14:12  simon.atack@nottingham.ac.uk
+
+	* [r442] Update to LTI Documentation
+
+2012-10-03 14:11  simon.atack@nottingham.ac.uk
+
+	* [r441] Update to LTI Documentation
+
+2012-10-01 17:25  simon.atack@nottingham.ac.uk
+
+	* [r440] initial support for XOT as an LTI provider
+	  plus bugfix in the upgrade.php file as it was skipping the next
+	  upgrade function if previously run.
+
+2012-09-24 15:45  simon.atack@nottingham.ac.uk
+
+	* [r439] Fix to LDAP authentication as missing firstname & surname
+
+2012-09-24 14:31  julian.tenney@nottingham.ac.uk
+
+	* [r438]
+
+2012-09-17 12:29  julian.tenney@nottingham.ac.uk
+
+	* [r434]
+
+2012-09-16 18:46  ronm123@googlemail.com
+
+	* [r432] Restoring the check for page title size for all pages.
+	  This was committed previously but seems to have been lost in
+	  subsequent changes.
+
+2012-09-13 11:05  julian.tenney@nottingham.ac.uk
+
+	* [r430]
+
+2012-09-13 10:11  julian.tenney@nottingham.ac.uk
+
+	* [r429] Scenario connector removed from the LO new nodes section
+
+2012-09-13 06:03  ajjreijnders@gmail.com
+
+	* [r428] Make number of questions language agnostic
+
+2012-09-12 20:35  mr.johnathan.kemp@gmail.com
+
+	* [r427] Found a couple of lines with missing semicolons, so added
+	  them.
+
+2012-09-12 15:45  julian.tenney@nottingham.ac.uk
+
+	* [r426]
+
+2012-09-12 14:35  julian.tenney@nottingham.ac.uk
+
+	* [r425] replaced missing handlers for onThemeChange to trip the
+	  sub page colour stuff for Alistair
+
+2012-09-08 09:53  ajjreijnders@gmail.com
+
+	* [r424] Small changes to allow a xerte standalone project to be
+	  imported in XOT 2.18
+	  - Make sure that if preview.xml is not found, no empty
+	  preview.xml is produced
+	  - Facilitate debugging when development is set to true in
+	  config.php
+
+2012-09-06 09:19  gingerdog@gmail.com
+
+	* [r423] this should allow the ?debug=1 stuff to work
+
+2012-09-05 22:12  gingerdog@gmail.com
+
+	* [r422] remove this
+
+2012-09-05 22:12  gingerdog@gmail.com
+
+	* [r421] fix incorrect sql...
+
+2012-09-02 15:40  ajjreijnders@gmail.com
+
+	* [r420] Import of a template zip did not work due to typo on line
+	  167 (causing a php error)
+	  Also create a wizards folder for new templates
+
+2012-09-02 15:39  ajjreijnders@gmail.com
+
+	* [r419] Name of non-public template was not displayed.
+
+2012-08-30 09:48  gingerdog@gmail.com
+
+	* [r418] upgrade.php: initial attempt at automating the migration
+	  of ldap configuration from sitedetails to the ldap table (hide
+	  var_dump stuff)
+
+2012-08-30 09:48  gingerdog@gmail.com
+
+	* [r417] upgrade.php: initial attempt at automating the migration
+	  of ldap configuration from sitedetails to the ldap table
+
+2012-08-28 07:27  mr.johnathan.kemp@gmail.com
+
+	* [r416] JK updated flashPaper and tab nav connector models to set
+	  print2flash files to first page.
+	  Slideshow and dragdroplabel models were older than versions in
+	  xerte svn and lacked changes to language elements this has
+	  necessitated an update to the data.xwd file
+
+2012-08-08 09:26  julian.tenney@nottingham.ac.uk
+
+	* [r415] formatting
+
+2012-08-07 14:16  julian.tenney@nottingham.ac.uk
+
+	* [r414]
+
+2012-08-01 14:22  julian.tenney@nottingham.ac.uk
+
+	* [r413] Restoring to just linear nav
+
+2012-07-31 15:38  ronm123@googlemail.com
+
+	* [r412] added default value of 24 so it reflects current value if
+	  not set
+
+2012-07-31 15:22  ronm123@googlemail.com
+
+	* [r411] added optional property to set page title size between 16
+	  and 30
+
+2012-07-31 15:21  ronm123@googlemail.com
+
+	* [r410] added condition to check if page title size has been set
+	  via optional LO property and if so to set page title size
+	  accordingly
+
+2012-07-25 22:09  patrick.lockley@googlemail.com
+
+	* [r409] Fixed change owner code
+
+2012-07-25 09:37  julian.tenney@nottingham.ac.uk
+
+	* [r408] Fixed to provide navigation options for the back button,
+	  rootIcon.navStyle = 'menu' or 'linear'. 'linear' is the default
+
+2012-07-24 22:10  patrick.lockley@googlemail.com
+
+	* [r407]
+
+2012-07-24 13:57  julian.tenney@nottingham.ac.uk
+
+	* [r406]
+
+2012-07-23 21:27  patrick.lockley@googlemail.com
+
+	* [r405]
+
+2012-07-23 21:20  patrick.lockley@googlemail.com
+
+	* [r404] neatened display of the workspace properties tab
+
+2012-07-23 21:19  patrick.lockley@googlemail.com
+
+	* [r403] Fixed Change Owner bug
+
+2012-07-23 19:30  ronm123@googlemail.com
+
+	* [r402] changing link at bottom of publish window to proper link
+	  e.g. can be clicked to view LO in a new window
+
+2012-07-23 14:51  julian.tenney@nottingham.ac.uk
+
+	* [r401]
+
+2012-07-20 15:33  julian.tenney@nottingham.ac.uk
+
+	* [r400]
+
+2012-07-20 13:29  julian.tenney@nottingham.ac.uk
+
+	* [r399]
+
+2012-07-20 13:20  julian.tenney@nottingham.ac.uk
+
+	* [r398]
+
+2012-07-20 12:16  julian.tenney@nottingham.ac.uk
+
+	* [r397]
+
+2012-07-20 11:26  julian.tenney@nottingham.ac.uk
+
+	* [r396] AS much as I can fix easily.
+
+2012-07-19 22:12  patrick.lockley@googlemail.com
+
+	* [r395] Added feedback to the give page
+
+2012-07-19 11:27  julian.tenney@nottingham.ac.uk
+
+	* [r394] Fixes inconsistent indenting between folers and LOs
+
+2012-07-19 07:54  cross.fay@gmail.com
+
+	* [r393]
+
+2012-07-19 07:37  julian.tenney@nottingham.ac.uk
+
+	* [r392] Bringing the SVNs in synch
+
+2012-07-19 07:29  cross.fay@gmail.com
+
+	* [r391]
+
+2012-07-18 12:38  julian.tenney@nottingham.ac.uk
+
+	* [r390]
+
+2012-07-18 10:57  cross.fay@gmail.com
+
+	* [r389]
+
+2012-07-18 09:43  ronm123@googlemail.com
+
+	* [r388] working fix for confirmation message when deleting an LO
+	  or a folder
+
+2012-07-17 21:35  patrick.lockley@googlemail.com
+
+	* [r387]
+
+2012-07-17 14:07  ronm123@googlemail.com
+
+	* [r386] fix for publishing via the workspace publish button -
+	  removed the need for the lo to be public before publishing via
+	  this route
+
+2012-07-17 13:54  julian.tenney@nottingham.ac.uk
+
+	* [r385]
+
+2012-07-17 12:04  julian.tenney@nottingham.ac.uk
+
+	* [r384] removed the maximise link in the editor window
+
+2012-07-17 12:00  julian.tenney@nottingham.ac.uk
+
+	* [r383]
+
+2012-07-17 11:38  julian.tenney@nottingham.ac.uk
+
+	* [r382] Half dodgy fix so we can remove the maximise window lik
+	  from the editor
+
+2012-07-17 10:43  julian.tenney@nottingham.ac.uk
+
+	* [r381]
+
+2012-07-16 23:04  patrick.lockley@googlemail.com
+
+	* [r380] Fixed for media and quota
+
+2012-07-16 22:27  patrick.lockley@googlemail.com
+
+	* [r379]
+
+2012-07-16 14:54  ronm123@googlemail.com
+
+	* [r378] Noticed (and committed) previously that the QR code page
+	  had stopped working due to one of the external sites used. This
+	  is a 1.8 XOT fix and I have a similar fix for 1.7. That previous
+	  revision was since overwritten by a set of revisions committed by
+	  Julian so this is the fix re-applied. I also need to contact
+	  University of Southampton as the fix is using their site to
+	  generate the QR code now.
+
+2012-07-13 14:55  julian.tenney@nottingham.ac.uk
+
+	* [r377] fixed title on IFC icon
+
+2012-07-13 09:44  ronm123@googlemail.com
+
+	* [r376] Changed insert into `$originaltemplatesdetails` (line 69)
+	  so that multiple perspectives and media interactions are set to
+	  inactive
+
+2012-07-13 09:38  ronm123@googlemail.com
+
+	* [r375] changed guest to guest2 as discussed on the dev list e.g.
+	  demo.txt has used guest2 for about 2 years so this change is more
+	  relevant for those upgrading
+
+2012-07-12 13:15  ronm123@googlemail.com
+
+	* [r374] commented out lines 112 to 117 to remove error about
+	  demo.txt error when installing via For XAMPP People option
+
+2012-07-12 08:30  julian.tenney@nottingham.ac.uk
+
+	* [r373] Synching up the xerte and toolkits svns for 1.8 release.
+
+2012-07-05 13:14  julian.tenney@nottingham.ac.uk
+
+	* [r372] Bringing xerte and toolkits svn for a build.zip
+
+2012-07-04 11:35  ronm123@googlemail.com
+
+	* [r371] Noticed today that the QR code page had stopped working
+	  due to one of the external sites used. This is a 1.8 fix and I
+	  have a similar fix for 1.7 but need to contact University of
+	  Southampton as the fix is using their site to generate the QR
+	  code now.
+
+2012-06-27 07:41  cross.fay@gmail.com
+
+	* [r370]
+
+2012-06-26 09:49  julian.tenney@nottingham.ac.uk
+
+	* [r369]
+
+2012-06-22 15:02  julian.tenney@nottingham.ac.uk
+
+	* [r368]
+
+2012-06-22 12:17  cross.fay@gmail.com
+
+	* [r367]
+
+2012-06-13 15:43  julian.tenney@nottingham.ac.uk
+
+	* [r366] Fixed unspoken volume control label in the main interface
+
+2012-05-30 20:05  ajjreijnders@gmail.com
+
+	* [r365] Fix for labels in the wizard when not able to explicitly
+	  set a language
+
+2012-05-30 16:42  patrick.lockley@googlemail.com
+
+	* [r364]
+
+2012-05-29 19:33  ajjreijnders@gmail.com
+
+	* [r363] Typo in wizard texts
+
+2012-05-29 16:30  patrick.lockley@googlemail.com
+
+	* [r362] Removed Eureka variable name
+
+2012-05-29 13:10  ajjreijnders@gmail.com
+
+	* [r361] Committed icon change for Scenario connector
+
+2012-05-29 11:52  julian.tenney@nottingham.ac.uk
+
+	* [r360]
+
+2012-05-29 11:44  julian.tenney@nottingham.ac.uk
+
+	* [r359]
+
+2012-05-29 11:38  ajjreijnders@gmail.com
+
+	* [r358] Update data.xwd with icon references
+
+2012-05-29 10:06  mr.johnathan.kemp@gmail.com
+
+	* [r357] JK Added destination page for game end and improved game
+	  end sequence.
+
+2012-05-28 14:17  mr.johnathan.kemp@gmail.com
+
+	* [r356] JK generated new data.xwd file to correspond with recent
+	  changes to pages.
+
+2012-05-28 14:01  mr.johnathan.kemp@gmail.com
+
+	* [r355] JK update to Scenario page, updates made in pageTemplates
+	  added to buttonNav, columnPage, title, and bug fix to
+	  connectorPlainText
+
+2012-05-28 11:10  ajjreijnders@gmail.com
+
+	* [r354] Internationalize 'Logged in as'
+
+2012-05-27 19:46  ajjreijnders@gmail.com
+
+	* [r353] Make use of $_SESSION['toolkits_language'] consistent, and
+	  thus fix in the language dependent var loading of some of the js
+	  files.
+	  
+	  Deletion should work again from the Media and Quota tab
+
+2012-05-26 13:31  ajjreijnders@gmail.com
+
+	* [r352] Multilanguage support in Engine and Wizard
+
+2012-05-26 13:30  ajjreijnders@gmail.com
+
+	* [r351] Fixed media and Quota Panel
+
+2012-05-11 11:38  ajjreijnders@gmail.com
+
+	* [r350] Oops
+
+2012-05-11 11:04  ajjreijnders@gmail.com
+
+	* [r349] Fix SCORM 2004 export and changes to the wording.
+
+2012-05-10 19:32  ronm123@googlemail.com
+
+	* [r348] minor tweak to add <br></br> tags to separate export links
+
+2012-05-10 19:06  ajjreijnders@gmail.com
+
+	* [r347] Changes in export
+
+2012-05-04 21:04  mr.johnathan.kemp@gmail.com
+
+	* [r346] Remove Display Text child element, simplified navigation
+	  options on Connector pages. Colour options added to menu
+	  connector. Fixed a number of bugs. Added counts to lists in
+	  Scenario Page. Youtube pages added new pageWizard test and
+	  support for pageIndexing (for desktop usage). Note changes to
+	  Connector pages may compromise existing connector pages in the
+	  demo site. Removed indexChanger as it is for use in desktop Xerte
+	  only. JK
+
+2012-05-04 09:40  cross.fay@gmail.com
+
+	* [r345]
+
+2012-05-04 07:38  ajjreijnders@gmail.com
+
+	* [r344] Fix quotes in langugaes/en-GB/index.inc (xertetrans
+	  doesn't work otherwise)
+
+2012-05-03 15:20  ajjreijnders@gmail.com
+
+	* [r343] Fixes and additions for export
+	  - Should copy all the language .xml files from the top of the
+	  /language folder
+	  - Should enable scorm2004 compliant export
+	  - Should copy JMolViewer and/or mapstraction folders if and only
+	  if those models are used
+	  - Should ONLY export the used media, the rest is not copied
+	  - small fixes in htaccess.conf
+	  - small fixes in library/Xerte/Authentication/Db.php
+	  - get rid of superfuous scorm files
+	  - move MainPreloader.swf, rloObject.js and resources.swf out of
+	  scorm in in their own folder (modules/xerte/export)
+
+2012-05-02 12:52  julian.tenney@nottingham.ac.uk
+
+	* [r342]
+
+2012-05-02 10:17  julian.tenney@nottingham.ac.uk
+
+	* [r341]
+
+2012-05-02 09:26  gingerdog@gmail.com
+
+	* [r340] hmm should not be necessary - remove global $USER
+
+2012-05-02 09:25  gingerdog@gmail.com
+
+	* [r339] global $USER
+
+2012-05-02 09:16  julian.tenney@nottingham.ac.uk
+
+	* [r338]
+
+2012-05-02 08:16  cross.fay@gmail.com
+
+	* [r337]
+
+2012-05-01 20:31  ronm123@googlemail.com
+
+	* [r336] Updated to cover the new method of enabling/configuring
+	  moodle authentication integration
+
+2012-05-01 20:13  ronm123@googlemail.com
+
+	* [r335] changed default auth back from moodle to Guest. After the
+	  discussion on the list thinking this might be the best option for
+	  now and we cover in documentation what people need to change for
+	  other auth methods.
+
+2012-05-01 15:05  ronm123@googlemail.com
+
+	* [r334] Added "Logged in as firstname lastname" to line 434. Needs
+	  changing so that string works with language code but not sure
+	  where/how to do that.
+
+2012-05-01 15:03  ronm123@googlemail.com
+
+	* [r333] added code to restrict access when using Moodle for
+	  integration. The code to restrict moodle guest access is enabled
+	  if moodle authentication is chosen. The custom profile field code
+	  is commented out but there for reference for those who want to
+	  use it. Might be better to make both of these a function inside
+	  \library\Xerte\Authentication\Moodle.php and just call from
+	  config.php but not sure?
+
+2012-05-01 14:52  ronm123@googlemail.com
+
+	* [r332] removed some of the comments re moodle integration at top
+	  of page - will update the moodle integration readme in due course
+
+2012-05-01 14:48  ronm123@googlemail.com
+
+	* [r331] changed to $development = false;
+
+2012-05-01 12:25  julian.tenney@nottingham.ac.uk
+
+	* [r330]
+
+2012-05-01 12:07  julian.tenney@nottingham.ac.uk
+
+	* [r329]
+
+2012-05-01 12:01  julian.tenney@nottingham.ac.uk
+
+	* [r328]
+
+2012-05-01 11:54  julian.tenney@nottingham.ac.uk
+
+	* [r327]
+
+2012-05-01 11:13  julian.tenney@nottingham.ac.uk
+
+	* [r326]
+
+2012-04-30 12:56  julian.tenney@nottingham.ac.uk
+
+	* [r325]
+
+2012-04-30 11:06  julian.tenney@nottingham.ac.uk
+
+	* [r324] Export fixed to export $SESSION['default_language'] rather
+	  than en-GB
+
+2012-04-30 08:04  julian.tenney@nottingham.ac.uk
+
+	* [r323] export code added, but not finished. Unsure how to know
+	  which language should be exported.
+
+2012-04-29 20:23  gingerdog@gmail.com
+
+	* [r322] fix rons include_path problem (windows etc)
+
+2012-04-29 20:12  gingerdog@gmail.com
+
+	* [r321] remove debug thing
+
+2012-04-29 19:27  gingerdog@gmail.com
+
+	* [r320] autoloader.php - Ron M try this.
+
+2012-04-29 19:23  gingerdog@gmail.com
+
+	* [r319] fix stupid safari which defaults to en-US ... look for the
+	  base language and glob on that if we cannot find an exact match
+
+2012-04-29 18:47  gingerdog@gmail.com
+
+	* [r318] remove blank space
+
+2012-04-29 18:47  gingerdog@gmail.com
+
+	* [r317] Update auth plugins; allow them to not require login if it
+	  is not necessary; add Moodle prototype; default to Guest and no
+	  login is required
+
+2012-04-29 18:23  gingerdog@gmail.com
+
+	* [r316] silly me
+
+2012-04-29 18:20  gingerdog@gmail.com
+
+	* [r315] config.php - fix up to work better with moodle, I think
+
+2012-04-29 18:16  gingerdog@gmail.com
+
+	* [r314] logout.php - it logs you out...
+
+2012-04-29 18:15  gingerdog@gmail.com
+
+	* [r313] apparently .AppleDoubles are disliked; not sure how this
+	  is being set as an auto-svn-ignore, but it gets my vote
+
+2012-04-29 18:15  gingerdog@gmail.com
+
+	* [r312] apparently .AppleDoubles are disliked; not sure how this
+	  is being set as an auto-svn-ignore, but it gets my vote
+
+2012-04-29 18:14  gingerdog@gmail.com
+
+	* [r311] remove login_library.php - this no longer exists
+
+2012-04-29 18:14  gingerdog@gmail.com
+
+	* [r310] go away
+
+2012-04-29 18:13  gingerdog@gmail.com
+
+	* [r309] go away
+
+2012-04-29 18:13  gingerdog@gmail.com
+
+	* [r308] reindent, remove the foreach() with pass by reference in
+	  it which might make some users of php4 happier - however they
+	  will be screwed by other changes i have made today...
+
+2012-04-29 18:11  gingerdog@gmail.com
+
+	* [r307] try and get rid of the duplication which is in place with
+	  the front page - move auth checks out into a separate modular
+	  library - initial support for LDAP, Static and Guest (all tested)
+	  and Db (should work, not tested); config.php defaults to Guest
+	  for ease of use;
+
+2012-04-29 17:55  gingerdog@gmail.com
+
+	* [r306] should not have committed this
+
+2012-04-29 17:53  gingerdog@gmail.com
+
+	* [r305] add Zend_Locale stuff and appropriate autoloading
+	  capability - for the language choosing stuff
+
+2012-04-29 17:52  gingerdog@gmail.com
+
+	* [r304] hello library
+
+2012-04-29 16:43  gingerdog@gmail.com
+
+	* [r303] beautify the installer; bump up php version to 5.2+; add
+	  check that PHP is not ancient; add blue/red colours
+
+2012-04-29 12:55  gingerdog@gmail.com
+
+	* [r302] add an intial attempt at language selection based on
+	  either a preference from the user or an indication from their
+	  browser - requires Zend/Locale which has also been added
+
+2012-04-27 08:06  ajjreijnders@gmail.com
+
+	* [r301] Try to make language codes consistent across the board
+	  Share languages files between xerte and xot
+	  Update data.xwd (previous order of menu)
+
+2012-04-20 17:42  ronm123@googlemail.com
+
+	* [r300] added a space in front of "to give a copy of this template
+	  to this user." to fix an error reported by Jonathan
+
+2012-04-20 16:41  patrick.lockley@googlemail.com
+
+	* [r299]
+
+2012-04-20 09:33  cross.fay@gmail.com
+
+	* [r298]
+
+2012-04-19 19:02  patrick.lockley@googlemail.com
+
+	* [r297]
+
+2012-04-19 18:16  patrick.lockley@googlemail.com
+
+	* [r296]
+
+2012-04-19 18:06  patrick.lockley@googlemail.com
+
+	* [r295] Fixed bugs with code merges
+	  Improved some language support
+
+2012-04-19 16:45  patrick.lockley@googlemail.com
+
+	* [r294] Fixed issues caused bt diff merge breaking PHP
+
+2012-04-17 21:51  mr.johnathan.kemp@gmail.com
+
+	* [r293]
+
+2012-04-04 11:02  mr.johnathan.kemp@gmail.com
+
+	* [r292] data.xwd is now constructed from Tom's php script based on
+	  the xwd files. The model files have been updated to match the
+	  requirements of the new data.xwd file. Thumbnails have been
+	  updated to add those that were missing. (Just in case I have kept
+	  a back up of data.xwd as data_orig.xwd)
+
+2012-04-03 14:21  julian.tenney@nottingham.ac.uk
+
+	* [r291]
+
+2012-03-30 16:41  patrick.lockley@googlemail.com
+
+	* [r290] Fixes to management.php
+
+2012-03-29 09:54  cross.fay@gmail.com
+
+	* [r289]
+
+2012-03-23 16:55  cross.fay@gmail.com
+
+	* [r288] New feature - Media & transcript viewer added
+
+2012-03-22 11:36  cross.fay@gmail.com
+
+	* [r287] Bug fix - functions added to preview.php so pages with
+	  frames work (& resize with screen size changes)
+	  New - extra features in jmol.rlm
+
+2012-03-21 12:01  cross.fay@gmail.com
+
+	* [r286] Bug fix - text / image height problem on subpages
+
+2012-03-12 22:33  gingerdog@gmail.com
+
+	* [r285] version.txt: add $Id$ keyword, I hope
+
+2012-03-08 09:09  julian.tenney@nottingham.ac.uk
+
+	* [r284]
+
+2012-03-07 19:54  patrick.lockley@googlemail.com
+
+	* [r283] Config.php
+	  
+	  Problem in _load_language_file if path doesn't exist (two files
+	  had typos in name).
+	  Added a file_exists call - better than a require fail? I thought
+	  possibly
+	  
+	  Index.php
+	  
+	  Deleted mine by mistake - should be identical as taken from trunk
+	  
+	  Some language files changes to fix the properties errors and a
+	  typo in Peer review
+	  
+	  Modules/Xerte/Peer.php had some eeeeengggggleeeeeesh in it still.
+	  Now removed. Toppie!
+	  
+	  RSS.PHP - all garbled up, now put back together again (suspect
+	  the merge)
+	  
+	  Website_code/php/fileupload.php - typo in name of language file
+	  
+	  website_code/php/peer/peer_review.php - typo in name of language
+	  file
+	  
+	  website_code/php/properties/access_template.php - all messed up
+	  by the merge i think (code had reappeared that had been taken
+	  out).
+	  
+	  website_code/php/properties/xml_template.php - all messed up by
+	  the merge i think (code had reappeared that had been taken out).
+	  
+	  website_code/php/scorm/export.php added isset check to some
+	  variables so as to pass STRICT_WARNINGS and resolved all manner
+	  of crazy post mergeness - the file had it's contents copied three
+	  times.
+	  
+	  website_code/php/scorm/scorm_library.php fixed typo in array
+	  index for licences (to licence)
+
+2012-03-06 11:09  gingerdog@gmail.com
+
+	* [r282] xampp.php: fix installs on OSX so the db contains the
+	  correct values, not hard coded c:\ stuff
+
+2012-03-06 10:53  gingerdog@gmail.com
+
+	* [r281] I am assuming demo.php is the one we should keep/use, and
+	  demo.txt was stale
+
+2012-03-06 00:37  gingerdog@gmail.com
+
+	* [r280] user_library.php: fix what looks like a merge failure in
+	  check_is_first_time()
+
+2012-03-06 00:36  gingerdog@gmail.com
+
+	* [r279] edit.php: reindent
+
+2012-03-05 22:41  gingerdog@gmail.com
+
+	* [r278] add an obvious security warning
+
+2012-03-05 22:22  gingerdog@gmail.com
+
+	* [r277] write out something helpful wrt .htaccess generation
+
+2012-03-05 22:16  gingerdog@gmail.com
+
+	* [r276] Remove dependency for language file loading - not used in
+	  here, and it breaks the installer
+
+2012-03-05 22:08  gingerdog@gmail.com
+
+	* [r275] reindent
+
+2012-03-05 22:05  gingerdog@gmail.com
+
+	* [r274] drop any tables which may already exist on install
+
+2012-03-05 22:00  gingerdog@gmail.com
+
+	* [r273] reindent
+
+2012-03-05 22:00  gingerdog@gmail.com
+
+	* [r272] fix broken closing </ol> tag
+
+2012-03-05 11:13  gingerdog@gmail.com
+
+	* [r271] fix issues with config.php conflicting with PEAR::Config
+	  on Windows systems (be explicit over which config.php we wish to
+	  load; possible local file disclosure fix in getfile.php
+	  (SECURITY)
+
+2012-03-05 11:02  gingerdog@gmail.com
+
+	* [r270] reindent and fix syntax error - still invalid though as
+	  $query_for_security_content_response is not defined/not sure
+	  where it is coming from
+
+2012-03-02 23:10  gingerdog@gmail.com
+
+	* [r269] explicitly return false; remove reliance on $_SESSION
+	  being populated (stop E_NOTICE like error thing)
+
+2012-03-02 23:03  gingerdog@gmail.com
+
+	* [r268] database.php: you should not be in svn - you are generated
+	  through /setup
+
+2012-03-02 22:55  gingerdog@gmail.com
+
+	* [r267] preview.php: I think this was merged weirdly; I have
+	  rewritten it so it should be easier to understand and might
+	  actually work (untested)
+
+2012-03-02 22:30  gingerdog@gmail.com
+
+	* [r266] remove unused code (function: normal_date(..))
+
+2012-03-02 20:38  patrick.lockley@googlemail.com
+
+	* [r265] Suggest leaving development = true in config.php on until
+	  dev finished
+	  Demo.txt fixed to allow for login
+	  bug in preview nesting resolved
+	  lots of require_once added to the PHP folder files - suspect more
+
+2012-03-01 15:24  julian.tenney@nottingham.ac.uk
+
+	* [r264] I think this is the up to date file fro 1 .8
+
+2012-03-01 14:53  julian.tenney@nottingham.ac.uk
+
+	* [r263] ================================
+	  All templates brought up to date
+	  =========== 1.8 ==============
+
+2012-03-01 13:55  julian.tenney@nottingham.ac.uk
+
+	* [r262] =====================
+	  Merged 1.8 into Trunk
+	  =====================
+
+2012-03-01 13:36  julian.tenney@nottingham.ac.uk
+
+	* [r261] 1.7 merged back into trunk
+	  ---------------------
+
+2012-02-29 11:02  cross.fay@gmail.com
+
+	* [r260]
+
+2012-02-16 11:46  cross.fay@gmail.com
+
+	* [r259]
+
+2012-02-16 11:42  cross.fay@gmail.com
+
+	* [r258] 'Loading table data...' message added
+
+2012-02-10 10:07  julian.tenney@nottingham.ac.uk
+
+	* [r257]
+
+2012-02-02 14:48  cross.fay@gmail.com
+
+	* [r256]
+
+2012-02-01 14:00  cross.fay@gmail.com
+
+	* [r255] Change to customHotspots in data.xwd
+
+2012-02-01 11:40  cross.fay@gmail.com
+
+	* [r254] Bug fix to customHotspots.rlm
+
+2012-01-26 15:57  cross.fay@gmail.com
+
+	* [r253]
+
+2012-01-26 15:17  cross.fay@gmail.com
+
+	* [r252] New template added (tabNavExtra.rlm)
+
+2012-01-26 08:35  julian.tenney@nottingham.ac.uk
+
+	* [r251]
+
+2012-01-25 17:07  gingerdog@gmail.com
+
+	* [r250] remove local memory limit restriction - see also
+	  changeset:249 and changeset:248 - this allows us to export
+	  templates up to the size of phps memory limit setting
+
+2012-01-06 20:32  patrick.lockley@googlemail.com
+
+	* [r247]
+
+2012-01-05 15:16  cross.fay@gmail.com
+
+	* [r246]
+
+2012-01-05 15:07  cross.fay@gmail.com
+
+	* [r245]
+
+2012-01-04 15:13  cross.fay@gmail.com
+
+	* [r244] Bug fix for textVideo.rlm - problem with video not
+	  returning to correct dimensions after viewing it full screen
+
+2012-01-03 15:28  julian.tenney@nottingham.ac.uk
+
+	* [r243]
+
+2011-12-12 12:50  julian.tenney@nottingham.ac.uk
+
+	* [r240]
+
+2011-12-09 09:22  julian.tenney@nottingham.ac.uk
+
+	* [r239]
+
+2011-12-08 08:50  julian.tenney@nottingham.ac.uk
+
+	* [r238]
+
+2011-12-07 12:05  julian.tenney@nottingham.ac.uk
+
+	* [r237]
+
+2011-12-02 16:49  cross.fay@gmail.com
+
+	* [r236]
+
+2011-11-25 14:48  julian.tenney@nottingham.ac.uk
+
+	* [r233]
+
+2011-11-11 11:06  julian.tenney@nottingham.ac.uk
+
+	* [r232]
+
+2011-11-10 12:20  cross.fay@gmail.com
+
+	* [r231] Bug fix to audioSlideshow & perspectives models
+
+2011-11-07 23:29  gingerdog@gmail.com
+
+	* [r228] ensure we load our database.php even if we have a weird
+	  include_path set
+
+2011-11-07 23:27  gingerdog@gmail.com
+
+	* [r227] this seems redundant now considering what is in config.php
+
+2011-11-03 15:08  julian.tenney@nottingham.ac.uk
+
+	* [r226]
+
+2011-11-03 00:07  gingerdog@gmail.com
+
+	* [r225] fix dependencies from config which we cannot use here as
+	  sitedetails is empty; be explicit about where we are entering in
+	  sitedetails; colourise error messages
+
+2011-11-03 00:05  gingerdog@gmail.com
+
+	* [r224] reindent (config.php)
+
+2011-11-02 23:40  gingerdog@gmail.com
+
+	* [r223] fix path output to the end user - do not have duplicte
+	  setup dirs
+
+2011-11-02 23:35  gingerdog@gmail.com
+
+	* [r222] page4.php: refactor down the number of code lines, really
+	  it should be one big insert statement not zillions of updates...
+
+2011-11-02 22:27  gingerdog@gmail.com
+
+	* [r221] page4.php: reindent
+
+2011-11-02 17:20  ronm123@googlemail.com
+
+	* [r219]
+
+2011-11-02 14:38  ronm123@googlemail.com
+
+	* [r218] updated to work with moodle or other integration e.g.
+	  conditional session_start()
+
+2011-11-02 14:37  ronm123@googlemail.com
+
+	* [r217] updated instructions
+
+2011-11-02 11:30  cross.fay@gmail.com
+
+	* [r216] Update to jmol / embeddiv page models so they work with
+	  different screen size options
+
+2011-11-02 10:03  julian.tenney@nottingham.ac.uk
+
+	* [r215]
+
+2011-11-01 10:38  ronm123@googlemail.com
+
+	* [r214] new moodlepatch files tested with moodle 1.9x and 2.1x
+
+2011-11-01 10:21  ronm123@googlemail.com
+
+	* [r213] Missing from common folder
+
+2011-10-27 10:11  gingerdog@gmail.com
+
+	* [r210] reindent
+
+2011-10-27 10:08  gingerdog@gmail.com
+
+	* [r207] do not try and set an ldap option unless we have actually
+	  connected
+
+2011-10-27 10:07  gingerdog@gmail.com
+
+	* [r206] reindent, re-order includes
+
+2011-10-27 09:58  gingerdog@gmail.com
+
+	* [r205] remove target specificiation to stop new windows occurring
+
+2011-10-27 09:53  gingerdog@gmail.com
+
+	* [r203] reindent
+
+2011-10-27 09:50  gingerdog@gmail.com
+
+	* [r202] FIX missing global xerte_toolkits_site which may break
+	  playback
+
+2011-10-21 13:54  julian.tenney@nottingham.ac.uk
+
+	* [r187]
+
+2011-10-21 12:40  gingerdog@gmail.com
+
+	* [r186] fix styles on popup for new folder to keep julian happy
+
+2011-10-21 12:39  julian.tenney@nottingham.ac.uk
+
+	* [r185]
+
+2011-10-21 12:20  gingerdog@gmail.com
+
+	* [r184] this was missing - only relevant in error-ish conditions
+
+2011-10-21 12:20  gingerdog@gmail.com
+
+	* [r183] abort if a template directory already exists; this should
+	  not happen but....
+
+2011-10-21 12:17  gingerdog@gmail.com
+
+	* [r182] stop new export opening a blank window; so it behaves the
+	  same as a scorm export
+
+2011-10-21 10:41  julian.tenney@nottingham.ac.uk
+
+	* [r181]
+
+2011-10-21 09:45  gingerdog@gmail.com
+
+	* [r180] ensure trim() is available in here too
+
+2011-10-21 09:35  gingerdog@gmail.com
+
+	* [r179] ah, it seems lesser browsers do not have a String.trim()
+	  function; this should add one in
+
+2011-10-21 09:30  gingerdog@gmail.com
+
+	* [r178] perhaps stop IE7 moaning
+
+2011-10-21 09:29  gingerdog@gmail.com
+
+	* [r177] perhaps stop IE7 moaning
+
+2011-10-21 09:26  gingerdog@gmail.com
+
+	* [r176] perhaps stop IE7 moaning
+
+2011-10-21 09:23  gingerdog@gmail.com
+
+	* [r175] perhaps stop IE7 moaning
+
+2011-10-21 09:20  gingerdog@gmail.com
+
+	* [r174] debugging ie7 problem
+
+2011-10-21 09:19  gingerdog@gmail.com
+
+	* [r173] debugging ie7 problem
+
+2011-10-20 22:37  gingerdog@gmail.com
+
+	* [r172] log where the query was called from
+
+2011-10-20 22:37  gingerdog@gmail.com
+
+	* [r171] fix incorrect var (row_username when it should be
+	  row_edit); check to ensure template_id is valid
+
+2011-10-20 22:36  gingerdog@gmail.com
+
+	* [r170] change api for create_user_id(...)
+
+2011-10-20 22:35  gingerdog@gmail.com
+
+	* [r169] stop dg from changing $development around, allow _debug()
+	  to log where the function was called from
+
+2011-10-20 22:35  gingerdog@gmail.com
+
+	* [r168] see previous changeset
+
+2011-10-20 22:34  gingerdog@gmail.com
+
+	* [r167] change api for create_user_id() to require the parameters
+	  it uses
+
+2011-10-20 14:28  gingerdog@gmail.com
+
+	* [r166] remove duplicate requires for database_library, make sure
+	  config.php is require_once-ed
+
+2011-10-20 13:36  gingerdog@gmail.com
+
+	* [r165] try and stop double inclusion
+
+2011-10-20 13:35  gingerdog@gmail.com
+
+	* [r164] remove duplication
+
+2011-10-20 13:33  gingerdog@gmail.com
+
+	* [r163] updates
+
+2011-10-20 13:24  gingerdog@gmail.com
+
+	* [r162] update requires
+
+2011-10-20 13:22  gingerdog@gmail.com
+
+	* [r161] rearrange requires
+
+2011-10-20 13:16  gingerdog@gmail.com
+
+	* [r160] suppress error messages from _debug()
+
+2011-10-20 13:15  gingerdog@gmail.com
+
+	* [r159] remove unnecessary config inclusion; change to absolute
+	  path in module_Functions
+
+2011-10-20 11:30  gingerdog@gmail.com
+
+	* [r158] no need to include config; xerte_toolkits_site is a global
+
+2011-10-20 11:07  gingerdog@gmail.com
+
+	* [r157] demo.txt: fixup index page used in XAMP installs - stop
+	  including code twice etc
+
+2011-10-19 21:11  gingerdog@gmail.com
+
+	* [r156] reindent (I think)
+
+2011-10-19 15:32  julian.tenney@nottingham.ac.uk
+
+	* [r154]
+
+2011-10-19 15:04  julian.tenney@nottingham.ac.uk
+
+	* [r153]
+
+2011-10-19 15:00  julian.tenney@nottingham.ac.uk
+
+	* [r152]
+
+2011-10-19 11:54  gingerdog@gmail.com
+
+	* [r150] reindent; replace short open tag which should fix issues
+	  if short open tags are turned off (i.e. new 5.3 versions)
+
+2011-10-19 10:35  gingerdog@gmail.com
+
+	* [r142] turn development/logging to debug file off by default;
+	  print error message out if db is offline etc
+
+2011-10-17 07:40  julian.tenney@nottingham.ac.uk
+
+	* [r139]
+
+2011-10-06 21:24  gingerdog@gmail.com
+
+	* [r131] add db upgrade script - at the moment it does nothing as
+	  there are no upgrade_xx() functions defined; should be run
+	  through a browser; see example code at the end of the file
+
+2011-10-05 21:09  gingerdog@gmail.com
+
+	* [r130] reindent; remove mysql_* stuff; replace with db_query;
+	  ensure vaguely valid form submission
+
+2011-10-05 21:06  gingerdog@gmail.com
+
+	* [r129] reindent/format
+
+2011-10-05 21:06  gingerdog@gmail.com
+
+	* [r128] typo fix
+
+2011-10-05 20:44  gingerdog@gmail.com
+
+	* [r127] move feedback message to where the user can see it (hiding
+	  off hte screen is bad)
+
+2011-10-05 20:28  gingerdog@gmail.com
+
+	* [r126] fix recycle query - only want one row back to check, not a
+	  list of rows
+
+2011-10-05 20:28  gingerdog@gmail.com
+
+	* [r125] split is deprecated; replace with explode; rename exploded
+	  parts to make more obvious
+
+2011-10-05 20:15  gingerdog@gmail.com
+
+	* [r124] reindentation; attempting to refactor slightly (replace
+	  sql injection prone db calls with db_query*(..); try and reduce
+	  nesting by exiting early if possible; these changes need testing
+	  and have not been yet (I will try and check them asap once they
+	  are commmitted so i can sync them to my other server)
+
+2011-10-03 21:22  gingerdog@gmail.com
+
+	* [r123] update db queries used in creation of rss feeds; improve
+	  date formatting; remove some duplication
+
+2011-10-03 21:18  gingerdog@gmail.com
+
+	* [r122] remove closing ?> from setup/database.txt so it cannot get
+	  padded with spaces which breaks xml declarations later on (and
+	  probably causes spurious output/alerts from AJAX calls)
+
+2011-10-03 20:17  gingerdog@gmail.com
+
+	* [r121] reindent; try and get date format correct (syndicate.php)
+
+2011-10-03 20:16  gingerdog@gmail.com
+
+	* [r120] tidy up js; make config.php mandatory
+
+2011-10-03 20:13  gingerdog@gmail.com
+
+	* [r119] do not display the login page/stuff when successfully
+	  logged in (+exit()); try and make embedded JS a bit neater
+
+2011-10-01 15:37  Patrick.Lockley@gmail.com
+
+	* [r118]
+
+2011-09-28 14:50  gingerdog@gmail.com
+
+	* [r117] reindent; remove unnecessary code
+
+2011-09-28 14:49  gingerdog@gmail.com
+
+	* [r116] another pointless file?
+
+2011-09-28 14:48  gingerdog@gmail.com
+
+	* [r115] this file seems pointless
+
+2011-09-28 14:48  gingerdog@gmail.com
+
+	* [r114] reindent
+
+2011-09-28 14:48  gingerdog@gmail.com
+
+	* [r113] reindent
+
+2011-09-28 14:47  gingerdog@gmail.com
+
+	* [r112] fix path to images
+
+2011-09-28 14:47  gingerdog@gmail.com
+
+	* [r111] reindent; change to db_query_once
+
+2011-09-28 14:46  gingerdog@gmail.com
+
+	* [r110] various js fixes; i am no js expert, so some of these
+	  might be rubbish
+
+2011-09-28 14:46  gingerdog@gmail.com
+
+	* [r109] reindent; use db_query_one
+
+2011-09-28 14:45  gingerdog@gmail.com
+
+	* [r108] reindent, make a bit more error immune
+
+2011-09-28 14:44  gingerdog@gmail.com
+
+	* [r107] xerte/new_template.php: remove nasty loop_create_folder
+	  and replace it with copy_r which seems vaguely readable; add
+	  debugging stuff; change to new db_query_one
+
+2011-09-28 14:43  gingerdog@gmail.com
+
+	* [r106] reindent
+
+2011-09-28 14:43  gingerdog@gmail.com
+
+	* [r105] reindent
+
+2011-09-28 14:40  gingerdog@gmail.com
+
+	* [r104] refactor; remove duplication (some); use db_query_one()
+
+2011-09-28 14:40  gingerdog@gmail.com
+
+	* [r103] database_library.php: no need to be stupid and try and run
+	  the same db query twice...
+
+2011-09-28 14:39  gingerdog@gmail.com
+
+	* [r102] reident; not sure this is used as it does not look like it
+	  could/would work (at least if called directly)
+
+2011-09-28 12:23  gingerdog@gmail.com
+
+	* [r101] refactor; reindent; add debugging
+
+2011-09-28 12:13  gingerdog@gmail.com
+
+	* [r100] login_library.php: reindent; improve error
+	  handling/reporting
+
+2011-09-28 10:17  gingerdog@gmail.com
+
+	* [r99] config.php: make development setting (debugging etc)
+	  toggleable
+
+2011-09-28 10:15  gingerdog@gmail.com
+
+	* [r98] refactor query stuff
+
+2011-09-28 10:13  gingerdog@gmail.com
+
+	* [r97] cannot call unset with the return value of a function
+
+2011-09-28 10:11  gingerdog@gmail.com
+
+	* [r96] reindent
+
+2011-09-28 10:10  gingerdog@gmail.com
+
+	* [r95] fix db_query function to return a list of records; add
+	  db_query_one() as a convienance method
+
+2011-09-27 18:14  gingerdog@gmail.com
+
+	* [r94] stupid 404 messages for this
+
+2011-09-27 18:12  gingerdog@gmail.com
+
+	* [r93] fix issue:9 on googlecode - update tutorial links
+
+2011-09-27 18:06  gingerdog@gmail.com
+
+	* [r92] add a poor mans effort at prepared statements for MySQL to
+	  help fix issue:5
+
+2011-09-27 17:11  gingerdog@gmail.com
+
+	* [r91] fix issue:6 on googlecode
+	  website_code/php/properties/properties_template.php
+
+2011-09-27 17:09  gingerdog@gmail.com
+
+	* [r90] website_code/styles/frontpage.css: fix as per issue:4 from
+	  googlecode
+
+2011-09-27 16:41  gingerdog@gmail.com
+
+	* [r89] after logging out, $_SESSION will be empty; check for this
+
+2011-09-27 16:41  gingerdog@gmail.com
+
+	* [r88] try and not load database_library.php twice
+
+2011-09-27 15:58  gingerdog@gmail.com
+
+	* [r87] ldap.txt: some brief hints on setting up ldap
+
+2011-09-27 15:57  gingerdog@gmail.com
+
+	* [r86] mark this variable as explicitly global
+
+2011-09-27 15:48  gingerdog@gmail.com
+
+	* [r85] fix undefined (but required) global variable
+
+2011-09-27 15:27  gingerdog@gmail.com
+
+	* [r84] there is no point in assigning a varialbe in a die;
+	  reindent
+
+2011-09-27 15:23  gingerdog@gmail.com
+
+	* [r83] reindent; add minor comment at the top
+
+2011-09-27 15:23  gingerdog@gmail.com
+
+	* [r82] index.php: enhance error reporting; remove duplicate code;
+	  reindent
+
+2011-09-27 15:22  gingerdog@gmail.com
+
+	* [r81] config.php: reindent; create new $xerte_toolkits_site
+	  StdClass object if one does not exist
+
+2011-09-27 14:02  gingerdog@gmail.com
+
+	* [r80] readme.txt: pointless commit - checking to see if
+	  googlecode.com loves me
+
+2011-09-14 09:42  julian.tenney@nottingham.ac.uk
+
+	* [r79]
+
+2011-09-14 09:37  julian.tenney@nottingham.ac.uk
+
+	* [r78]
+
+2011-09-14 07:36  cross.fay@gmail.com
+
+	* [r77]
+
+2011-09-09 14:06  julian.tenney@nottingham.ac.uk
+
+	* [r76] Fixed bug in wizard where depths were clashing on redrawing
+	  the form.
+
+2011-08-26 09:48  julian.tenney@nottingham.ac.uk
+
+	* [r75] fixed preloading of language files to prevent undefined
+	  labels on first load
+
+2011-08-25 14:48  julian.tenney@nottingham.ac.uk
+
+	* [r74]
+
+2011-08-25 14:47  julian.tenney@nottingham.ac.uk
+
+	* [r73]
+
+2011-08-24 15:19  julian.tenney@nottingham.ac.uk
+
+	* [r72] Improved JMol Viewer html file
+
+2011-08-24 14:43  julian.tenney@nottingham.ac.uk
+
+	* [r71]
+
+2011-08-24 14:36  julian.tenney@nottingham.ac.uk
+
+	* [r70]
+
+2011-08-24 08:54  julian.tenney@nottingham.ac.uk
+
+	* [r69] added the langauge option / character pad
+
+2011-08-23 11:11  julian.tenney@nottingham.ac.uk
+
+	* [r68] -------------------------------
+	  Xerte Online Toolkits Build 1.7
+	  -------------------------------
+
+2011-08-23 10:23  julian.tenney@nottingham.ac.uk
+
+	* [r67] Better JMol page using the iframe popup to make it appear
+	  part of the flash movie, smoke and mirrors style.
+
+2011-08-19 13:55  julian.tenney@nottingham.ac.uk
+
+	* [r66]
+
+2011-08-18 13:53  julian.tenney@nottingham.ac.uk
+
+	* [r65]
+
+2011-08-18 10:58  julian.tenney@nottingham.ac.uk
+
+	* [r64] Pats changes to allow make_pop_up() via callJS for doing
+	  z-index pop ups above the flash movie
+
+2011-07-28 10:42  julian.tenney@nottingham.ac.uk
+
+	* [r63]
+
+2011-07-20 14:15  julian.tenney@nottingham.ac.uk
+
+	* [r62]
+
+2011-07-15 07:39  julian.tenney@nottingham.ac.uk
+
+	* [r61]
+
+2011-07-08 10:53  julian.tenney@nottingham.ac.uk
+
+	* [r60] Export support for language-config.xml and exporting
+	  english.xml. Unsure how to know what other files to export. Maybe
+	  a default.xml is the main file for the site, and 'probably' what
+	  the user wants to export.
+
+2011-07-07 10:25  julian.tenney@nottingham.ac.uk
+
+	* [r59]
+
+2011-07-07 10:02  julian.tenney@nottingham.ac.uk
+
+	* [r58] Adds 'createWindow' function for launching new html windows
+	  from New Window template.
+
+2011-07-06 10:10  julian.tenney@nottingham.ac.uk
+
+	* [r57] Multi language support in the engine.
+
+2011-06-17 11:48  julian.tenney@nottingham.ac.uk
+
+	* [r56]
+
+2011-06-16 18:18  ronm123@googlemail.com
+
+	* [r55] added transcript code including conditionals to show or
+	  hide transcript and/or change label on button
+
+2011-06-16 18:16  ronm123@googlemail.com
+
+	* [r54] textGraphics section updated with two optional properties
+	  transcript and transcriptbuttonlabel
+
+2011-06-13 13:05  julian.tenney@nottingham.ac.uk
+
+	* [r53] Applying Tom's patch for the logo issue.
+
+2011-06-09 07:19  ajjreijnders@gmail.com
+
+	* [r52]
+
+2011-06-02 15:49  julian.tenney@nottingham.ac.uk
+
+	* [r51] Fix for non-deleting media and quota files
+
+2011-05-16 13:25  julian.tenney@nottingham.ac.uk
+
+	* [r50]
+
+2011-05-06 14:12  julian.tenney@nottingham.ac.uk
+
+	* [r49]
+
+2011-05-06 11:16  julian.tenney@nottingham.ac.uk
+
+	* [r48]
+
+2011-05-05 15:28  julian.tenney@nottingham.ac.uk
+
+	* [r47] correct path to xpert from the wizard button
+
+2011-05-03 15:30  julian.tenney@nottingham.ac.uk
+
+	* [r46] added the MCQ option t the customHotspots page, to auto
+	  generate a quiz based on hotspots.
+
+2011-05-03 10:01  julian.tenney@nottingham.ac.uk
+
+	* [r45] error message when .rlo / .rlt fails to load.
+
+2011-04-13 10:31  julian.tenney@nottingham.ac.uk
+
+	* [r44] newWindow page type for opening a new window, controlling
+	  it's size, for launching other content from within toolkits: a 3D
+	  model viewer, or a google map for instance. TO be developed
+	  further for passing data into the other window for the content to
+	  access.
+
+2011-04-12 15:13  julian.tenney@nottingham.ac.uk
+
+	* [r43]
+
+2011-04-12 12:50  julian.tenney@nottingham.ac.uk
+
+	* [r42]
+
+2011-04-08 15:23  patrick.lockley@nottingham.ac.uk
+
+	* [r41]
+
+2011-04-08 11:07  patrick.lockley@nottingham.ac.uk
+
+	* [r40]
+
+2011-04-08 10:45  patrick.lockley@nottingham.ac.uk
+
+	* [r39]
+
+2011-04-08 10:43  patrick.lockley@nottingham.ac.uk
+
+	* [r38]
+
+2011-04-05 14:10  julian.tenney@nottingham.ac.uk
+
+	* [r37] Updated wizard and engine.
+
+2011-04-05 13:55  patrick.lockley@nottingham.ac.uk
+
+	* [r36]
+
+2011-04-05 13:49  julian.tenney@nottingham.ac.uk
+
+	* [r35] Updated templates and support files for new zip file.
+
+2011-04-05 11:12  patrick.lockley@nottingham.ac.uk
+
+	* [r34]
+
+2011-03-25 17:00  patrick.lockley@nottingham.ac.uk
+
+	* [r33] New installer page added
+
+2011-03-25 13:18  patrick.lockley@nottingham.ac.uk
+
+	* [r32]
+
+2011-03-25 13:15  julian.tenney@nottingham.ac.uk
+
+	* [r31]
+
+2011-03-25 13:14  julian.tenney@nottingham.ac.uk
+
+	* [r30]
+
+2011-03-25 13:14  julian.tenney@nottingham.ac.uk
+
+	* [r29]
+
+2011-03-25 13:05  patrick.lockley@nottingham.ac.uk
+
+	* [r28] Beta version 1
+
+2011-03-25 13:03  patrick.lockley@nottingham.ac.uk
+
+	* [r27]
+
+2011-02-18 10:29  julian.tenney@nottingham.ac.uk
+
+	* [r26] Fixed typo in set up path, pg16
+
+2011-02-11 15:07  patrick.lockley@nottingham.ac.uk
+
+	* [r25]
+
+2011-02-11 15:06  patrick.lockley@nottingham.ac.uk
+
+	* [r24]
+
+2011-01-24 16:14  julian.tenney@nottingham.ac.uk
+
+	* [r23]
+
+2011-01-21 11:23  julian.tenney@nottingham.ac.uk
+
+	* [r22]
+
+2011-01-21 11:23  julian.tenney@nottingham.ac.uk
+
+	* [r21]
+
+2011-01-21 11:16  julian.tenney@nottingham.ac.uk
+
+	* [r20] Updated to fix
+
+2010-11-19 15:30  julian.tenney@nottingham.ac.uk
+
+	* [r19]
+
+2010-11-11 16:51  julian.tenney@nottingham.ac.uk
+
+	* [r18]
+
+2010-11-01 11:01  julian.tenney@nottingham.ac.uk
+
+	* [r17]
+
+2010-10-22 14:39  julian.tenney@nottingham.ac.uk
+
+	* [r16]
+
+2010-10-19 16:14  julian.tenney@nottingham.ac.uk
+
+	* [r15]
+
+2010-10-18 09:02  julian.tenney@nottingham.ac.uk
+
+	* [r14]
+
+2010-09-09 16:02  julian.tenney@nottingham.ac.uk
+
+	* [r13]
+
+2010-07-30 10:34  julian.tenney@nottingham.ac.uk
+
+	* [r12] Polish language support in wizard and char pad for language
+	  interactions
+
+2010-07-23 12:57  julian.tenney@nottingham.ac.uk
+
+	* [r11]
+
+2010-07-19 15:01  julian.tenney@nottingham.ac.uk
+
+	* [r10] Updated textVideo.rlm to allow a full screen toggle, and an
+	  updated engine to fire a MOVIE.onResize event so you can handle
+	  the resizing in Xerte.
+
+2010-07-19 08:57  julian.tenney@nottingham.ac.uk
+
+	* [r9]
+
+2010-07-14 15:49  julian.tenney@nottingham.ac.uk
+
+	* [r8]
+
+2010-07-12 12:23  julian.tenney@nottingham.ac.uk
+
+	* [r7]
+
+2010-06-08 15:24  julian.tenney@nottingham.ac.uk
+
+	* [r6]
+
+2010-05-27 08:35  julian.tenney@nottingham.ac.uk
+
+	* [r5]
+
+2010-05-26 10:10  julian.tenney@nottingham.ac.uk
+
+	* [r4]
+
+2010-05-24 09:52  julian.tenney@nottingham.ac.uk
+
+	* [r3]
+
+2010-04-29 13:06  julian.tenney@nottingham.ac.uk
+
+	* [r2]
+
+2010-04-29 13:03  
+
+	* [r1] Initial directory structure.
+
